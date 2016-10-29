@@ -1,5 +1,14 @@
 <head>
     <meta charset="utf-8" />
     
-    <link type="text/css" rel="stylesheet" href="/com1025_cw1/css/group.css">    
+    <?php 
+    $locationCheck = getcwd() . "\index.php";
+    $backtrace = debug_backtrace();
+
+    if (in_array($locationCheck, $backtrace[0])) : ?>
+        <link type="text/css" rel="stylesheet" href="./css/group.css">   
+    <?php else : ?>
+        <link type="text/css" rel="stylesheet" href="../css/group.css">   
+    <?php endif; ?>
+        
 </head>
