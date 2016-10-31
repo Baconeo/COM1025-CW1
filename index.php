@@ -3,18 +3,39 @@
     <?php include('./common/header.php') ?>
 
     <head>
-        <title> </title>
+        <title>Main page</title>
         <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+		<style type = "text/css">
+			ul{
+				 margin: auto;
+				 text-align: center;
+				 padding: 100px
+			}
+			
+			li{
+				display: inline-block;
+				padding: 10px;
+				width: 150px;
+			}
+			
+			img.pics {
+
+				height: 150px;
+				width: 150px;
+				display: inline;
+			}
+		</style>
+		
     </head>
     <body>
         <h1 style="text-align:center">Group 15's Page!</h1>
 		<p>This is group 15's main page! The members of our group are:</p>
 		<ul>
-		<li>Callum Seymour</li>
-		<li>Sam Rowe</li>
-		<li>Robert Bacon</li>
-		<li>Thushanthy Thillainathan</li>
-		<li>Robert Murray</li>
-		<li>Lukas Rygh</li>
+		<li>Callum Seymour <img src = "images/Placeholder_person.jpg" class="pics"</li>
+		<li>Sam Rowe <img src = "images/Placeholder_person.jpg" class="pics"</li>
+		<li>Robert Bacon <img src = "images/Placeholder_person.jpg" class="pics"</li>
+		<li>Thushanthy Thillainathan <img src = "images/Placeholder_person.jpg" class="pics"</li>
+		<li>Robert Murray <img src = "images/Placeholder_person.jpg" class="pics"</li>
+		<li>Lukas Rygh <img src = "images/Placeholder_person.jpg" class="pics"</li>
     </body>
 </html>
