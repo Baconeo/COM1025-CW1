@@ -36,7 +36,7 @@
 		<li>Sam Rowe <img src = "images/Placeholder_person.jpg" class="pics"</li>
 		<li>Robert Bacon <img src = "images/Placeholder_person.jpg" class="pics"</li>
 		<li>Thushanthy Thillainathan <img src = "images/Placeholder_person.jpg" class="pics"</li>
-		<li>Robert Murray <img src = "images/Placeholder_person.jpg" class="pics"</li>
+		<li>Robbie Murray <img src = "images/Placeholder_person.jpg" class="pics"</li>
 		<li>Lukas Rygh <img src = "images/Placeholder_person.jpg" class="pics"</li>
     </body>
 </html>
