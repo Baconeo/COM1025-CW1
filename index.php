@@ -6,24 +6,7 @@
         <title>Group 15</title>
         <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 		<style type = "text/css">
-			ul{
-				 margin: auto;
-				 text-align: center;
-				 padding: 100px
-			}
-			
-			li{
-				display: inline-block;
-				padding: 10px;
-				width: 150px;
-			}
-			
-			img.pics {
 
-				height: 150px;
-				width: 150px;
-				display: inline;
-			}
 
 		</style>
 		
