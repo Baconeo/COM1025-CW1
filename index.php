@@ -24,6 +24,7 @@
 				width: 150px;
 				display: inline;
 			}
+
 		</style>
 		
     </head>
@@ -31,7 +32,7 @@
         <h1 style="text-align:center">Group 15's Page!</h1>
 		<p>This is group 15's main page! The members of our group are:</p>
 		<ul>
-		<li>Callum Seymour <img src = "images/Placeholder_person.jpg" class="pics"</li>
+		<a href="profiles/member_6426813.php" target=_blank><li>Callum Seymour <img src = "images/Placeholder_person.jpg" class = "pics"</li></a>
 		<li>Sam Rowe <img src = "images/Placeholder_person.jpg" class="pics"</li>
 		<li>Robert Bacon <img src = "images/Placeholder_person.jpg" class="pics"</li>
 		<li>Thushanthy Thillainathan <img src = "images/Placeholder_person.jpg" class="pics"</li>
