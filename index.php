@@ -3,7 +3,7 @@
     <?php include('./common/header.php') ?>
 
     <head>
-        <title>Main page</title>
+        <title>Group 15</title>
         <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 		<style type = "text/css">
 			ul{
