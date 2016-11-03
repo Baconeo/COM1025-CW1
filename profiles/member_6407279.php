@@ -15,12 +15,11 @@ h3{text-decoration:underline;}
 </head>
 <body>
 <div>
-<h1 class="main"> Sam's Personal Page </h1>
-<hr>
+<h1 class="main"> Sam's Personal Page </h1><hr>
 </div>
-<h4 style="text-align:right;"> Navigate back to Home page:<br><a href="../index.php">- Home page</a></h4>
+<h4 style="text-align:right;"> Website Navigation:<br><a href="../index.php">- Home page</a></h4>
 <br>
-<h3>General Information</h3>
+<h3 title="General Information about my life">General Information</h3>
 <p>This page contains information about my life currently. It has details about my hobbies, interests and about my life in general. Previously, I went to Christ's College Sixth form in Guildford in which I got my A levels and made some very good friends. I am currently a student, in my first year, at the University of Surrey and I am studying Computing and Information Technology. I find my studies challenging but I take them <span id="serious">very seriously</span> as I want to have a successful career in my chosen field. I also have many hobbies and interests that are very varied as I enjoy many different things. Some of my hobbies and interests include:</p>
 <ul>
 <li> Watching and playing rugby</li>
@@ -37,20 +36,25 @@ h3{text-decoration:underline;}
 <thead><tr>
 <th>Interest</th>
 <th>Influence</th>
-</tr></thead>
-<tr>
+</tr></thead><tr>
 <td>Rugby</td>
 <td>My Dad played rugby so I started playing rugby</td>
+</tr><tr>
+<td>Harry Potter</td>
+<td>I read the books and I loved them</td>
+</tr><tr>
+<td>Socialising</td>
+<td>Meeting people that I like to spend time with</td>
+</tr><tr>
+<td>Family</td>
+<td>Having a nice family who are good to be around</td>
+</tr><tr>
+<td>Music</td>
+<td>Being exposed to a lot of good music</td>
+</tr><tr>
+<td>Video Games</td>
+<td>Being given a PS3 and having friends who also like gaming</td>
 </tr>
-<tr>
-<td rowspan="2">Harry Potter</td>
-<td>I watched the films and really enjoyed them</td>
-<td>I read the books and loved them</td>
-</tr>
-
-
-
-
 </table>
 </body>
 </html>

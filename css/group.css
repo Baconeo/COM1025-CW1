@@ -5,7 +5,7 @@ html{
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
-    
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     
 }
 
@@ -16,18 +16,9 @@ body{
 p{
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
-ul{
-    margin: auto;
-    text-align: center;
-    padding: 100px
+h1{
+	font-family:'Roboto', Arial, Helvetica, sans-serif;
 }
-
-li {
-    display: inline-block;
-    width: 150px;
-    position: relative;
-}
-
 img.pics {
     height: 150px;
     width: 150px;
@@ -54,4 +45,14 @@ p.names {
     padding-top: 50px;
     padding-left: 25px;
     color: #C6E1F7;
+}
+
+div.contactform {
+    color: black;
+    border: 3px solid #ccc;
+    border-radius: 4px;
+    width: 20%;
+    display: block;
+    margin : 0 auto;
+    text-align: center;
 }
