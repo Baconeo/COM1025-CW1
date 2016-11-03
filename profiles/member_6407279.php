@@ -8,15 +8,13 @@
 h1.main{text-align:center; font-weight:bold;}
 div{background-color:#C5EDAD;}
 a{font-weight:bold; text-decoration:none; color:black; position:relative; right:110px;}
-a:hover{text-decoration:underline;}
 h3{text-decoration:underline;}
 #serious{font-weight:bold;color:red;text-decoration:underline;}
 </style>
 </head>
 <body>
 <div>
-<h1 class="main"> Sam's Personal Page </h1>
-<hr>
+<h1 class="main"> Sam's Personal Page </h1><hr>
 </div>
 <h4 style="text-align:right;"> Navigate back to Home page:<br><a href="../index.php">- Home page</a></h4>
 <br>
