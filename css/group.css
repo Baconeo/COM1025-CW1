@@ -5,7 +5,7 @@ html{
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
-    
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     
 }
 
@@ -14,7 +14,7 @@ body{
 }
 
 p{
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    
 }
 ul{
     margin: auto;
