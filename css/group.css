@@ -14,18 +14,10 @@ body{
 }
 
 p{
-    
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
-<<<<<<< HEAD
 h1{
 	font-family:'Roboto', Arial, Helvetica, sans-serif;
-=======
-
-ul{
-    margin: auto;
-    text-align: center;
-    padding: 100px
->>>>>>> 0ab8070b0111c85422b6df3822814a4bed8bb601
 }
 img.pics {
     height: 150px;
