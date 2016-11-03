@@ -6,23 +6,48 @@
         <title> Robbie's Awesome Page duh </title>
         <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
         <style type="text/css">
-            
+            h1.main{text-align: center}
+            img.pics{height: 150px;
+                    width: 150px;
+                    position: relative;}
         </style>
     </head>
     <body>
-        <h1>
-            
-        </h1>
+        <span style="color:#25BF47">
+            <h1 class="main">
+                Robbie's Pagiest Page
+            </h1>
+        </span>
+        
+        <img src = "images/Placeholder_person.jpg" class='pics'>
         
         <p>
-            
+            Content of the paragraph
         </p>
         
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Content of the list</li>
+            <li>Content of the list</li>
+            <li>Content of the list</li>
         </ul>
+        
+        <table>
+            <tr>
+                <th>Table heading 1</th>
+                <th>Table heading 2</th>
+                <th>Table heading 3</th>
+            </tr>
+            <tr>
+                <td>R1 D1</td>
+                <td>R1 D2</td>
+                <td>R1 D3</td>
+            </tr>
+            <tr>
+                <td>R2 D1</td>
+                <td>R2 D2</td>
+                <td>R2 D3</td>
+            </tr>
+        </table>
         
     </body>
 </html>
