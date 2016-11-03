@@ -16,18 +16,9 @@ body{
 p{
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
-ul{
-    margin: auto;
-    text-align: center;
-    padding: 100px
+h1{
+	font-family:'Roboto', Arial, Helvetica, sans-serif;
 }
-
-li {
-    display: inline-block;
-    width: 150px;
-    position: relative;
-}
-
 img.pics {
     height: 150px;
     width: 150px;
