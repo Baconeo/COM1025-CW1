@@ -1,6 +1,6 @@
 <head>
     <meta http-equiv="Content-type" content="text/html;charset=utf-8" />
-    
+    <?php include('../common/header.php') ?>
     <?php 
     $locationCheck = getcwd() . "\index.php";
     $backtrace = debug_backtrace();
