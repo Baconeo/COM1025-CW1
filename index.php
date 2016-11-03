@@ -17,7 +17,7 @@
         <h1 style="text-align:center">Group 15's Page!</h1>
 		<p>This is group 15's main page! The members of our group are:</p>
 		<ul>
-                    <li>Callum Seymour <a href="profiles/member_6426813.php" target=_blank><img src = "images/Placeholder_person.jpg" class = "pics"></a></li>
+                    <li>Callum Seymour <a href="profiles/member_6426813.php" target=_blank><img src = "images/Placeholder_person.jpg" class = "pics"></a> <div class="textoverlay"><p class="names">Robert Bacon</p></div></li>
                     <li>Sam Rowe <a href="profiles/member_6407279.php" target="_blank"><img src = "images/Placeholder_person.jpg" class="pics"></a></li>
                     <li>
                         <img src = "images/Placeholder_person.jpg" class="pics">
