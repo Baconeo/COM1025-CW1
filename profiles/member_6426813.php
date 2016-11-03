@@ -8,18 +8,28 @@
 			text-align: center;
 			background-color: #00ff99;
 		}
+		.headings{
+			font-weight:bold;
+		}
 		
 		</style>
     </head>
     <body>
 	<h1>Callum's page</h1>
 	
-	<p>Hobbies / interests
+	<h2>A brief introduction</h2>
+		<p>This is my personal page which briefly details my life, including information about my education and future plans, as well as my hobbbies and interests.</p>
+	
+	<p class = "headings">Background</p>
+	
+	<p class = "headings">Education</p>
+	
+	<p class = "headings">Hobbies / interests</p>
 	<ul>
 		<li>Video Games</li>
 		<li>Game Of Thrones / A Song Of Ice And Fire</li>
 		<li>Star wars</li>
-		<li>Other nerdy things.....</li>
+		
 	</ul>
     </body>
 </html>
