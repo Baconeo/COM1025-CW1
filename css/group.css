@@ -46,3 +46,13 @@ p.names {
     padding-left: 25px;
     color: #C6E1F7;
 }
+
+div.contactform {
+    color: black;
+    border: 3px solid #ccc;
+    border-radius: 4px;
+    width: 20%;
+    display: block;
+    margin : 0 auto;
+    text-align: center;
+}
