@@ -1,6 +1,14 @@
-body{
+html{
     background-color: #C6E1F7;
     background-image: url("../images/BackgroundDraft1.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body{
+    
 }
 
 p{
