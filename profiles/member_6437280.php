@@ -19,7 +19,7 @@
             </h1>
         </span>
         
-        <img src = "images/Placeholder_person.jpg" class='pics'>
+        <img src = "../images/Placeholder_person.jpg" class='pics'>
         
         <p>
             Content of the paragraph
