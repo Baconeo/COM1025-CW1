@@ -3,6 +3,7 @@
     <?php include('../common/header.php') ?>
 
     <head>
+        <meta http-equiv="Content-type" content="text/html;charset=utf-8" />
         <title>Robert Bacon</title>
     </head>
     <body>

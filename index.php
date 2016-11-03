@@ -17,9 +17,13 @@
 		<ul>
                     <li>Callum Seymour <a href="profiles/member_6426813.php" target=_blank><img src = "images/Placeholder_person.jpg" class = "pics"></a></li>
                     <li>Sam Rowe <a href="profiles/member_6407279.php" target="_blank"><img src = "images/Placeholder_person.jpg" class="pics"></a></li>
-                    <li>Robert Bacon <img src = "images/Placeholder_person.jpg" class="pics"</li>
+                    <li>
+                        <img src = "images/Placeholder_person.jpg" class="pics">
+                        <div class="textoverlay"><p class="names">Robert Bacon</p></div>
+                    </li>
                     <li>Thushanthy Thillainathan <img src = "images/Placeholder_person.jpg" class="pics"></li>
                     <li>Robbie Murray <a href="profiles/member_6437280.php" target="_blank" ><img src = "images/Placeholder_person.jpg" class="pics" ></a></li>
                     <li>Lukas Rygh <img src = "images/Placeholder_person.jpg" class="pics"></li>
+                </ul>    
     </body>
 </html>
