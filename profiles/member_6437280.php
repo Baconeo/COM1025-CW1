@@ -5,7 +5,24 @@
     <head>
         <title> Robbie's Awesome Page duh </title>
         <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+        <style type="text/css">
+            
+        </style>
     </head>
     <body>
+        <h1>
+            
+        </h1>
+        
+        <p>
+            
+        </p>
+        
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        
     </body>
 </html>
