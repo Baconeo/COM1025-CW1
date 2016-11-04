@@ -17,6 +17,13 @@
 			width: 150px;
 			position: relative;
 		}
+                table {
+                    border-collapse:collapse;
+                }
+                th {
+                    background-color: #C5EDAD;
+                    color: white;
+                }
 		</style>
 	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
         
