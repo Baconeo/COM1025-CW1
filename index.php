@@ -58,7 +58,7 @@
                 </a>
             </li>
             <li> 
-                <a href="profiles/member_6429748.php.php">
+                <a href="profiles/member_6429748.php">
                     <img src = "images/Placeholder_person.jpg" class="pics">
                     <div class="textoverlay"><p class="names">Lukas Rygh</p></div>
                 </a>
