@@ -21,8 +21,7 @@
                     border-collapse:collapse;
                 }
                 th {
-                    background-color: #C5EDAD;
-                    color: white;
+                    background-color: #91EFA6;
                 }
 		</style>
 	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
@@ -76,8 +75,8 @@
             <table border="1" cellspacing="3" cellpadding="3">
                     <caption>Members of Group 15 Contact Emails</caption>
                     <tr>
-                            <th>Name</th>
-                            <th>Email</th>
+                            <th id="white">Name</th>
+                            <th id="white">Email</th>
                     </tr>
                     <tr>
                             <td>Sam Rowe</td>
