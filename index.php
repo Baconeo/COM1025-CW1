@@ -5,6 +5,7 @@
     <head>
         <title>Group 15</title>
         <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+		 <link type="text/css" rel="stylesheet" href="css/group.css">
 		<style type = "text/css">
 		ul{
 			margin: auto;
