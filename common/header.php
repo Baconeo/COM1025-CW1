@@ -39,12 +39,6 @@
 <html>
     <body>
         <div>
-            <?php
-            // Cookie not set on first visit so will throw an error when trying to print if not set
-            if (isset($_COOKIE["previousPages"])) {
-                print $_COOKIE["previousPages"];
-            }
-            ?>
             <div class="prim-navigation">
                 <div>
                     <?php if (locationCheck()) : ?>
@@ -54,6 +48,12 @@
                     <?php endif; ?>
                 </div>
             </div>
+            <?php
+            // Cookie not set on first visit so will throw an error when trying to print if not set
+            if (isset($_COOKIE["previousPages"])) {
+                print $_COOKIE["previousPages"];
+            }
+            ?>
         </div>
     </body>
 </html>
