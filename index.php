@@ -130,7 +130,7 @@
                     <input type="submit" value="Submit Comment">
                 </form>
             </div>	
-            <div style="display:none" id="contactFormSubmitted" class="contactFormSubmitted">
+            <div style="display:none" id="contactFormSubmitted" class="contactForm">
                 <p>Form Submitted!</p>
             </div>
         </div>

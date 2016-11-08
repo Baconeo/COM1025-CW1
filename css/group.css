@@ -57,16 +57,6 @@ div.contactForm {
     text-align: center;
 }
 
-div.contactFormSubmitted {
-    color: black;
-    border: 3px solid #ccc;
-    border-radius: 4px;
-    width: 20%;
-    display: block;
-    margin : 0 auto;
-    text-align: center;
-}
-
 div.prim-navigation {
   width: 100%;
   border-bottom: 3px solid #7d1010;
