@@ -51,6 +51,8 @@ div.contactForm {
     color: black;
     border: 3px solid #ccc;
     border-radius: 4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     width: 20%;
     display: block;
     margin : 0 auto;
