@@ -86,9 +86,9 @@
                 </a>
             </li>
         </ul>
-        <div>
+        <div style="overflow:auto;">
             <p>Below is the table containing all of our groups work emails if you need to contact them for any reason.</p>
-            <table border="1" cellspacing="3" cellpadding="3">
+            <table style="float:left;" border="1" cellspacing="3" cellpadding="3">
                     <caption>Members of Group 15 Contact Emails</caption>
                     <tr>
                             <th id="white">Name</th>
@@ -119,7 +119,7 @@
                             <td>tt00308@surrey.ac.uk</td>
                     </tr>
             </table>
-            <div id="contactForm" class="contactForm">
+            <div style="position:relative;" id="contactForm" class="contactForm">
                 <form action="mailto:sr00584@surrey.ac.uk,rm00727@surrey.ac.uk,lr00341@surrey.ac.uk,cs00916@surrey.ac.uk,rb00573@surrey.ac.uk,tt00308@surrey.ac.uk" id="mailtoform" method="POST">
                     <label>Your Email:</label><br />
                     <input type="email"><br />

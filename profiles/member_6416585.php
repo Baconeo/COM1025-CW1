@@ -15,10 +15,10 @@
             div #frontpage {
                 top: 100%
             }
-            div  #airsoft {
+            div  #hobbies {
                 top: 200%;
             }
-            div #pcgaming {
+            div #projects {
                 top: 300%;
             }
         </style>
@@ -43,7 +43,7 @@
                 </div>
             </div>
             <h1 style="text-align:center">Robert Bacon's Profile</h1>
-            <img align='middle' src = "../images/Placeholder_person.jpg" class="pics">
+            <img src = "../images/Placeholder_person.jpg" class="pics">
             <table>
                 <tr>
                     <th>Content</th>
@@ -51,13 +51,13 @@
                 <tr><td><a href="#airsoft">Airsoft</a></td></tr>
             </table>
         </div>
-        <div id='airsoft'>
+        <div id='hobbies'>
             <div>
                 <p>Test</p>
             </div>
         </div>
 
-        <div id='pcgaming'>
+        <div id='projects'>
             <div>
                 <p>Test</p>
             </div>
