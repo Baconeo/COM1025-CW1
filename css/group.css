@@ -17,7 +17,7 @@ p{
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 h1{
-	font-family:'Roboto', Arial, Helvetica, sans-serif;
+    font-family:'Roboto', Arial, Helvetica, sans-serif;
 }
 img.pics {
     height: 150px;
@@ -57,6 +57,7 @@ div.contactForm {
     text-align: center;
 }
 
+<<<<<<< HEAD
 div.contactFormSubmitted {
     color: black;
     border: 3px solid #ccc;
@@ -99,3 +100,44 @@ div.prim-navigation a:hover {
   color: #ffffff;
   border-bottom: none;
 }
+
+#white {
+    color:white;
+}
+
+/* Colour Pallet
+    
+        Lightest at the top
+        Middle - Main colour
+        Darkest at the bottom
+
+    Blue:
+        #C6E1F7
+        #92C0E7
+        #68A3D4
+        #4686BC
+        #286BA3
+
+    Red:
+        #FFCFC9
+        #FFA49B
+        #FF8174
+        #FF6252
+        #FD4431
+
+    Green:
+        #C5F9D0
+        #91EFA6
+        #66E181
+        #44D163
+        #25BF47
+
+    Yellow:
+        #FFE8C9
+        #FFD59B
+        #FFC474
+        #FFB652
+        #FDA731
+
+*/
+

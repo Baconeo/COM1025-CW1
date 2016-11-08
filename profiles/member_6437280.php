@@ -6,10 +6,23 @@
         <title> Robbie's Awesome Page duh </title>
         <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
         <style type="text/css">
-            h1.main{text-align: center}
-            img.pics{height: 150px;
-                    width: 150px;
-                    position: relative;}
+            h1.main{
+                text-align: center
+            }
+            
+            img.pics{
+                height: 150px;
+                width: 150px;
+                position: absolute;
+                right: 10px;
+                padding: 10px;
+            }
+            
+            tr,th,td{
+                border: 1px solid black;
+            }
+            
+            
         </style>
     </head>
     <body>
@@ -31,7 +44,7 @@
             <li>Content of the list</li>
         </ul>
         
-        <table>
+        <table style="border-collapse: collapse;">
             <tr>
                 <th>Table heading 1</th>
                 <th>Table heading 2</th>

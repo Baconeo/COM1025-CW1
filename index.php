@@ -5,7 +5,8 @@
     <head>
         <title>Group 15</title>
         <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-        <style type = "text/css">
+	<link type="text/css" rel="stylesheet" href="css/group.css">
+	<style type = "text/css">
             ul{
                     margin: auto;
                     text-align: center;
@@ -17,8 +18,16 @@
                     width: 150px;
                     position: relative;
             }
+            table {
+                border-collapse:collapse;
+            }
+            th {
+                background-color: #91EFA6;
+            }
         </style>
-	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+
+        <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+        
         <script>
             $(function() {
                 $("#mailtoform").submit(function(e) {
@@ -27,8 +36,6 @@
                 });
             });
         </script>
-        
-        
     </head>
     <body>
         <div class="prim-navigation">
@@ -73,7 +80,7 @@
                 </a>
             </li>
             <li> 
-                <a href="profiles/member_6429748.php.php">
+                <a href="profiles/member_6429748.php">
                     <img src = "images/Placeholder_person.jpg" class="pics">
                     <div class="textoverlay"><p class="names">Lukas Rygh</p></div>
                 </a>
@@ -84,8 +91,8 @@
             <table border="1" cellspacing="3" cellpadding="3">
                     <caption>Members of Group 15 Contact Emails</caption>
                     <tr>
-                            <th>Name</th>
-                            <th>Email</th>
+                            <th id="white">Name</th>
+                            <th id="white">Email</th>
                     </tr>
                     <tr>
                             <td>Sam Rowe</td>

@@ -4,6 +4,7 @@
 <head>
 <title>Sam's Personal Page</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+ <link type="text/css" rel="stylesheet" href="../css/group.css">
 <style type="text/css">
 h1.main{text-align:center; font-weight:bold;}
 div{background-color:#C5EDAD;}
@@ -55,6 +56,12 @@ h3{text-decoration:underline;}
 <td>Video Games</td>
 <td>Being given a PS3 and having friends who also like gaming</td>
 </tr>
-</table>
+</table><br><br>
+<p>I also love to spend time with animals. I believe that this is because I was brought up in a family that care about animals and many of my friends have got pets so I feel comfortable around them. For example:</p>
+<?php 
+$info = array (1 => array("Relation" => "friend", "Name" => "Jack", "animal" => "dog", "aniname" => "Steve"),2 => array("Relation" => "cousin", "Name" => "Nicola", "animal" => "dog", "aniname" = "Flash"),3 => array("Relation" => "friend", "Name" => "Ellie", "animal" => "dog", "aniname" => "Tilly"));
+
+foreach
+?>
 </body>
 </html>
