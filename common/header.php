@@ -1,9 +1,14 @@
 <head>
     <?php 
-    $locationCheck = getcwd() . "\index.php";
-    $backtrace = debug_backtrace();
+    
+    function locationCheck() {
+        $locationCheck = getcwd() . "\index.php";
+        $backtrace = debug_backtrace();
+        
+        return in_array($locationCheck, $backtrace[0]);
+    }
 
-    if (in_array($locationCheck, $backtrace[0])) : ?>
+    if (locationCheck()) : ?>
         <link type="text/css" rel="stylesheet" href="./css/group.css">   
     <?php else : ?>
         <link type="text/css" rel="stylesheet" href="../css/group.css">   
@@ -13,7 +18,7 @@
         
     
     <?php
-    // Cookie Creation and updating
+    // Cookie Creation
 
     // Cookie to store previous pages visited  
     $name = "previousPages";
@@ -42,7 +47,7 @@
             ?>
             <div class="prim-navigation">
                 <div>
-                    <?php if (in_array($locationCheck, $backtrace[0])) : ?>
+                    <?php if (locationCheck()) : ?>
                     <div><a href="./index.php">Home</a></div>
                     <?php else : ?>
                     <div><a href="../index.php">Home</a></div>
