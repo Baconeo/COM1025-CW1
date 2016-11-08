@@ -4,7 +4,6 @@
 
     <head>
         <meta http-equiv="Content-type" content="text/html;charset=utf-8" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
         <title>Robert Bacon's Profile</title>
         <style type='text/css'>
