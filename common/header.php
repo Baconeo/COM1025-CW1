@@ -4,8 +4,8 @@
     function locationCheck() {
         $locationCheck = getcwd() . "\index.php";
         $backtrace = debug_backtrace();
-        
-        return in_array($locationCheck, $backtrace[0]);
+                
+        return in_array($locationCheck, $backtrace[1]);
     }
 
     if (locationCheck()) : ?>
