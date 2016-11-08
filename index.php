@@ -5,24 +5,39 @@
     <head>
         <title>Group 15</title>
         <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-		<style type = "text/css">
-		ul{
-			margin: auto;
-			text-align: center;
-			padding: 100px
-			}
+        <style type = "text/css">
+            ul{
+                    margin: auto;
+                    text-align: center;
+                    padding: 100px
+                    }
 
-		li {
-			display: inline-block;
-			width: 150px;
-			position: relative;
-		}
-		</style>
+            li {
+                    display: inline-block;
+                    width: 150px;
+                    position: relative;
+            }
+        </style>
 	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+        <script>
+            $(function() {
+                $("#mailtoform").submit(function(e) {
+                    $("#contactForm").hide();
+                    $("#contactFormSubmitted").show();
+                });
+            });
+        </script>
         
         
     </head>
     <body>
+        <div class="prim-navigation">
+            <div> 
+                <div><a href="index.php">Home</a></div>
+                <div><a href="">About</a></div>
+            </div>
+        </div>
+        
         <h1 style="text-align:center">Group 15's Page!</h1>
         <p>This is group 15's main page! To access any of our members individual pages please click on their image below. This site will contain information about our members and their hobbie and interests. Their work email is also listed on this page should you wish to contact them. Enjoy!</p>
         <h3 title="Click the image of the member to access their page">Our Members:</h3>
@@ -97,7 +112,7 @@
                             <td>tt00308@surrey.ac.uk</td>
                     </tr>
             </table>
-            <div class="contactform">
+            <div id="contactForm" class="contactForm">
                 <form action="mailto:sr00584@surrey.ac.uk,rm00727@surrey.ac.uk,lr00341@surrey.ac.uk,cs00916@surrey.ac.uk,rb00573@surrey.ac.uk,tt00308@surrey.ac.uk" id="mailtoform" method="POST">
                     <label>Your Email:</label><br />
                     <input type="email"><br />
@@ -108,6 +123,10 @@
                     <input type="submit" value="Submit Comment">
                 </form>
             </div>	
+            <div style="display:none" id="contactFormSubmitted" class="contactFormSubmitted">
+                <p>Form Submitted!</p>
+            </div>
         </div>
     </body>
+    <?php include('./common/footer.php') ?>
 </html>

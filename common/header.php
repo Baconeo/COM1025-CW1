@@ -8,6 +8,10 @@
     <?php else : ?>
         <link type="text/css" rel="stylesheet" href="../css/group.css">   
     <?php endif; ?>
-        
-
+    
 </head>
+<html>
+    <body>
+
+    </body>
+</html>

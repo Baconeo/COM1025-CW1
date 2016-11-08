@@ -47,7 +47,7 @@ p.names {
     color: #C6E1F7;
 }
 
-div.contactform {
+div.contactForm {
     color: black;
     border: 3px solid #ccc;
     border-radius: 4px;
@@ -55,4 +55,47 @@ div.contactform {
     display: block;
     margin : 0 auto;
     text-align: center;
+}
+
+div.contactFormSubmitted {
+    color: black;
+    border: 3px solid #ccc;
+    border-radius: 4px;
+    width: 20%;
+    display: block;
+    margin : 0 auto;
+    text-align: center;
+}
+
+div.prim-navigation {
+  width: 100%;
+  border-bottom: 3px solid #7d1010;
+  background-color: #222222;
+  text-align: center;
+  height: 47px;
+}
+div.prim-navigation > div {
+  height: 47px;
+  margin: 0 auto;
+  font-size: 14px;
+}
+div.prim-navigation > div > div {
+  width: auto;
+  display: inline-block;
+  *display: inline;
+  position: relative;
+  text-transform: uppercase;
+}
+div.prim-navigation a {
+  font-weight: bold;
+  text-decoration: none;
+  padding: 12px 20px;
+  display: block;
+  text-shadow: 0px 1px 0px #000;
+  margin-top: 4px;
+  color: rgba(255, 255, 255, 0.7);
+}
+div.prim-navigation a:hover {
+  color: #ffffff;
+  border-bottom: none;
 }
