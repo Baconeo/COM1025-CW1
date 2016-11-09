@@ -15,10 +15,10 @@
             div #frontpage {
                 top: 100%
             }
-            div  #airsoft {
+            div  #hobbies {
                 top: 200%;
             }
-            div #pcgaming {
+            div #projects {
                 top: 300%;
             }
         </style>
@@ -33,31 +33,29 @@
             });
         </script>
     </head>
+    
     <body>
         <div id='frontpage'>
         <div>
-            <div class="prim-navigation">
-                <div> 
-                    <div><a href="../index.php">Home</a></div>
-                    <div><a href="">About</a></div>
-                </div>
-            </div>
-            <h1 style="text-align:center">Robert Bacon's Profile</h1>
-            <img align='middle' src = "../images/Placeholder_person.jpg" class="pics">
+            <h1 style="text-align:center; position:relative; padding-top:70px;">Robert Bacon's Profile</h1>
+            <img src = "../images/Placeholder_person.jpg" class="pics">
             <table>
                 <tr>
                     <th>Content</th>
                 </tr>
-                <tr><td><a href="#airsoft">Airsoft</a></td></tr>
+                <tr>
+                    <td><a href="#hobbies">Hobbies</a></td>
+                    <td><a href="#projects">Previous Projects</a></td>
+                </tr>
             </table>
         </div>
-        <div id='airsoft'>
+        <div id='hobbies'>
             <div>
                 <p>Test</p>
             </div>
         </div>
 
-        <div id='pcgaming'>
+        <div id='projects'>
             <div>
                 <p>Test</p>
             </div>

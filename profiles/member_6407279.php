@@ -1,3 +1,6 @@
+<?php
+
+?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
 <?php include('../common/header.php') ?>
@@ -61,7 +64,8 @@ h3{text-decoration:underline;}
 <?php 
 $info = array (1 => array("Relation" => "friend", "Name" => "Jack", "animal" => "dog", "aniname" => "Steve"),2 => array("Relation" => "cousin", "Name" => "Nicola", "animal" => "dog", "aniname" => "Flash"),3 => array("Relation" => "friend", "Name" => "Ellie", "animal" => "dog", "aniname" => "Tilly"));
 
-foreach
+foreach($info as $ID => $relation)
+	echo "<p>-My $relation[Relation]'s called $relation[Name] and they have a $relation[animal] called $relation[aniname].</p>";
 ?>
 </body>
 </html>
