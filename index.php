@@ -44,13 +44,13 @@ height:50%;
         <h3 title="Click the image of the member to access their page">Our Members:</h3>
         <ul>
             <li>
-                <a href="profiles/member_6426813.php" target=_blank>
+                <a href="profiles/member_6426813.php">
                     <img src = "images/Placeholder_person.jpg" class="pics">
                     <div class="textoverlay"><p class="names">Callum Seymour</p></div>
                 </a>
             </li>
             <li> 
-                <a href="profiles/member_6407279.php" target="_blank">
+                <a href="profiles/member_6407279.php">
                     <img src = "images/Placeholder_person.jpg" class="pics">
                     <div class="textoverlay"><p class="names">Sam Rowe</p></div>
                 </a>
@@ -68,7 +68,7 @@ height:50%;
                 </a>
             </li>
             <li> 
-                <a href="profiles/member_6437280.php" target="_blank" >
+                <a href="profiles/member_6437280.php">
                     <img src = "images/Placeholder_person.jpg" class="pics">
                     <div class="textoverlay"><p class="names">Robbie Murray</p></div>
                 </a>

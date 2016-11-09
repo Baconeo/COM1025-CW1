@@ -1,6 +1,7 @@
 html{
     background-color: #C6E1F7;
     background-image: url("../images/BackgroundDraft1.png");
+    background-attachment: fixed;
     background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
