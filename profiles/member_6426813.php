@@ -12,6 +12,21 @@
 		.headings{
 			font-weight:bold;
 		}
+		table {
+			border-collapse: collapse;
+			width: 100%
+		}
+		table, th, td{
+			 border: 1px solid black;
+		}
+		th, td{
+			text-align: left;
+			padding: 10px;
+		}
+		th{
+			background-color: #00ff99;
+		}
+			
 		</style>
     </head>
     <body>
@@ -23,7 +38,7 @@
 	<p class = "headings">Background</p>
 	
 	<p class = "headings">Education</p>
-		<table border="1">
+		<table>
 			<tr>
 				<th>Exam level</th>
 				<th>Subject</th>
@@ -97,5 +112,9 @@
 		<li>Star wars</li>
 		
 	</ul>
+	<p class = "headings">Influences</p>
+		<?php
+			$influences = array();
+		?>
     </body>
 </html>
