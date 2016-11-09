@@ -31,6 +31,7 @@
     </head>
     <body>
         <h1 style="text-align:center">Group 15's Page!</h1>
+<h2><marquee>Welcome To Our Group Page</marquee></h2>
         <p>This is group 15's main page! To access any of our members individual pages please click on their image below. This site will contain information about our members and their hobbie and interests. Their work email is also listed on this page should you wish to contact them. Enjoy!</p>
         <h3 title="Click the image of the member to access their page">Our Members:</h3>
         <ul>
