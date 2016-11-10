@@ -8,7 +8,8 @@
         <link type="text/css" rel="stylesheet" href="../css/group.css">
         <style type="text/css">
             h1.main{
-                text-align: center
+                text-align: center;
+                background-color: #FFC474;   
             }
             
             img.pics{
