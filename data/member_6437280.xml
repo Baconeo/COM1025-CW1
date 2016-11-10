@@ -1,21 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="alevelgrades">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="computing" />
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="grade" type="xs:char" />
+                        <xs:element name="examboard" type="xs:string" />
+                    </xs:sequence>
+                </xs:complexType> 
+            </xs:element>
+            <xs:element name="physics" />
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="grade" type="xs:char" />
+                        <xs:element name="examboard" type="xs:string" />
+                    </xs:sequence>
+                </xs:complexType> 
+            </xs:element> 
+            <xs:element name="maths" />
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="grade" type="xs:char" />
+                        <xs:element name="examboard" type="xs:string" />
+                    </xs:sequence>
+                </xs:complexType> 
+            </xs:element>                  
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+</xs:schema>
 
 <alevelgrades xml:lang="en">
     <computing>
         <grade>B</grade>
-        <examBoard>OCR</examBoard>
+        <examboard>OCR</examboard>
     </computing>
     <physics>
         <grade>B</grade>
-        <examBoard>AQA</examBoard>
+        <examboard>AQA</examboard>
     </physics>
     <maths>
         <grade>A</grade>
-        <examBoard>OCR</examBoard>
+        <examboard>OCR</examboard>
     </maths>
 </alevelgrades>

@@ -1,4 +1,24 @@
-<course xml:lang="en">
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="group15">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="student" />
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="URN" type="xs:int" />
+                        <xs:element name="name" type="xs:string" />
+                        <xs:element name="coursetitle" type="xs:string" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+</xs:schema>
+
+<group15 xml:lang="en">
     <student>
         <URN>6407279</URN>
         <name>Sam Rowe</name>
@@ -29,4 +49,4 @@
         <name>Lukas Rygh</name>
         <coursetitle>CS</coursetitle>
     </student>
-</course>
+</group15>

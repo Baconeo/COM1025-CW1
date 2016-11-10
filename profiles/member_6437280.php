@@ -36,9 +36,9 @@
                 background-image: url("../images/BackgroundDraft2.png");
             }
             
-            div {
+            .grey {
                 background-color: #E0E0E0;
-                opacity: 1;
+                opacity: 0.7;
             }
             
         </style>
@@ -52,7 +52,7 @@
         
         <img src = "../images/Placeholder_person.jpg" class='pics'>
         
-        <div>
+        <div class="grey">
             <p>
                 Here is a list of things I like.
             </p>
