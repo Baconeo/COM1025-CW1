@@ -25,21 +25,11 @@
     $value = substr($path, strrpos($path, "\\") + 1);
     // Remove everything after the last '.' in the string
     $value = strtok($value, '.');
-    
-    
+   
     if (isset($_COOKIE[$name])) {
         $value = $_COOKIE[$name] . " / " . $value;
     }
-     
-    $count = 0;
-    $countName = "pageCount";
     
-    if (isset($_COOKIE[$countName])){
-        $count = $_COOKIE[$countName];
-    }
-    $count++;
-    
-    setcookie($countName, $count, time() + (86400 * 30), '/');
     setcookie($name, $value, time() + (86400 * 30), '/');
     
     
@@ -62,9 +52,9 @@
             </div>
             <?php
             // Cookie not set on first visit so will throw an error when trying to print if not set
-            if (isset($_COOKIE["previousPages"]) && $_COOKIE["pageCount"] < 10) {
+            if (isset($_COOKIE["previousPages"])) {
                 print $_COOKIE["previousPages"];
-            }
+            } 
             ?>
         </div>
     </body>
