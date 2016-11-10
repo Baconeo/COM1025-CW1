@@ -76,7 +76,7 @@ div.prim-navigation > div {
 div.prim-navigation > div > div {
   width: auto;
   display: inline-block;
-  display: inline;
+  *display: inline;
   position: relative;
   text-transform: uppercase;
 }

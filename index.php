@@ -18,15 +18,18 @@
 			width: 150px;
 			position: relative;
 		}
-        table {
-            border-collapse:collapse;
-        }
-        th {
-            background-color: #91EFA6;
-        }
-        #split container{
-            height:50%;
-        }
+                table {
+                    border-collapse:collapse;
+                }
+                th {
+                    background-color: #91EFA6;
+                }
+                .half{
+                    top:100%;
+                }
+                .half2{
+                    top:100%;
+                }                
 		</style>
         
         <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'> 
@@ -46,7 +49,7 @@
     </head>
     <body>
         <div id="split container">
-            <section class ="half">
+            <section id="half" class ="half">
                 <h1 style="text-align:center">Group 15's Page!</h1>
                 <h2><marquee>Welcome To Our Group Page</marquee></h2>
                 <p>This is group 15's main page! To access any of our members individual pages please click on their image below. This site will contain information about our members and their hobbie and interests. Their work email is also listed on this page should you wish to contact them. Enjoy!</p>
@@ -90,7 +93,7 @@
                     </li>
                 </ul>
             </section>
-            <section class ="half2">
+            <section id="half2" class ="half2">
                 <div style="overflow:auto;">
                     <p>Below is the table containing all of our groups work emails if you need to contact them for any reason.</p>
                     <table style="float:left;" border="1" cellspacing="3" cellpadding="3">
