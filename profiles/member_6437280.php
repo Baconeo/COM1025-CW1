@@ -1,10 +1,11 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML>
 <html lang="en">
     <?php include('../common/header.php') ?>
 
     <head>
         <title> Robbie's Awesome Page duh </title>
-        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+        <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" href="../css/group.css">
         <style type="text/css">
             h1.main{
                 text-align: center
@@ -18,16 +19,23 @@
                 padding: 10px;
             }
             
+            th{ 
+                background-color: #FFD59B;
+            }
+            
             tr,th,td{
                 border: 1px solid black;
             }
             
+            span {
+                color:#A0A0A0;
+            }
             
         </style>
     </head>
     <body>
-        <span style="color:#25BF47">
-            <h1 class="main">
+        <span>
+            <h1 style="background-color:#FFC474" class="main">
                 Robbie's Pagiest Page
             </h1>
         </span>
