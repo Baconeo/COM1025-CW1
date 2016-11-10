@@ -44,8 +44,8 @@
                     <th>Content</th>
                 </tr>
                 <tr>
-                    <td><a href="#hobbies">Hobbies</a></td>
-                    <td><a href="#projects">Previous Projects</a></td>
+                    <td><a title="Hobbies that interest me" href="#hobbies">Hobbies</a></td>
+                    <td><a title="Previous projects I have been involved with"href="#projects">Previous Projects</a></td>
                 </tr>
             </table>
         </div>

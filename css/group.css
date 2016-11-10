@@ -61,7 +61,7 @@ div.contactForm {
 }
 
 div.prim-navigation {
-  width: 100%;
+  width: 99%;
   border-bottom: 3px solid #7d1010;
   background-color: #222222;
   text-align: center;
@@ -76,7 +76,7 @@ div.prim-navigation > div {
 div.prim-navigation > div > div {
   width: auto;
   display: inline-block;
-  *display: inline;
+  display: inline;
   position: relative;
   text-transform: uppercase;
 }

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person xml:lang="en">
+    <name>Shujun Li</name>
+    <title>Dr</title>
+    <role>Senior Lecturer</role>
+    <office>07 BB 02</office>
+    <email>Shujun.Li@surrey.ac.uk</email>
+    <URL>http://www.hooklee.com/</URL>
+    <hobbies type="UG">COM1025</hobbies>
+    <projects type="MSc">COMM046</projects>
+</person>
