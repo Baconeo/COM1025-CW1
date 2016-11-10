@@ -1,13 +1,15 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML>
 <html lang="en">
     <?php include('../common/header.php') ?>
 
     <head>
         <title> Robbie's Awesome Page duh </title>
-        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+        <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" href="../css/group.css">
         <style type="text/css">
             h1.main{
-                text-align: center
+                text-align: center;
+                background-color: #FFC474;   
             }
             
             img.pics{
@@ -18,16 +20,23 @@
                 padding: 10px;
             }
             
+            th{ 
+                background-color: #FFD59B;
+            }
+            
             tr,th,td{
                 border: 1px solid black;
             }
             
+            span {
+                color:#A0A0A0;
+            }
             
         </style>
     </head>
     <body>
-        <span style="color:#25BF47">
-            <h1 class="main">
+        <span>
+            <h1 style="background-color:#FFC474" class="main">
                 Robbie's Pagiest Page
             </h1>
         </span>
@@ -35,14 +44,38 @@
         <img src = "../images/Placeholder_person.jpg" class='pics'>
         
         <p>
-            Content of the paragraph
+            Here is a list of things I like.
         </p>
         
+        <?php
+        $interests = array("Playing Drums", "Skiing", "Programming", "Taking Photos",
+        "Cooking", "Running", "Playing Counter Strike", "Sleeping", "Eating", "Rock Climbing"); ?>
+        
         <ul>
-            <li>Content of the list</li>
-            <li>Content of the list</li>
-            <li>Content of the list</li>
+            <?php 
+            shuffle($interests);
+            foreach ($interests as $interests): ?> 
+            <li> <?php echo $interests; ?></li>
+            <?php endforeach;
+            unset($interests);?>
         </ul>
+         
+        <p> 
+            Here are my three extreme sports that I want to try out
+        </p>
+        
+        <?php
+        $sports = array("Paragliding", "Skydiving", "Sucba Diving", "Kite Surfing",
+        "Mountain Biking", "Bungee Jumping","White Water Rafting", "Walking on Water");
+        $rand_keys = array_rand($sports, 3);
+        echo $sports[$rand_keys[0]] . ", " . "\n";
+        echo $sports[$rand_keys[1]] . ", " . "\n";
+        echo $sports[$rand_keys[2]] . "\n";
+        ?>
+ 
+        <p>
+        <br>
+        </p>
         
         <table style="border-collapse: collapse;">
             <tr>
