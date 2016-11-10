@@ -135,6 +135,9 @@
                             <button onClick ="thankAlert()">Submit Comment</button>
                         </form>
                     </div>	
+                    <div style="display:none" id="contactFormSubmitted" class="contactForm">
+                        <p>Form Submitted!</p>
+                    </div>
                 </div>
             </section>
         </div>
