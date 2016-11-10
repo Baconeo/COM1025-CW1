@@ -37,7 +37,7 @@
             }
             
             div {
-                background-color: "E0E0E0";
+                background-color: "#E0E0E0";
                 opacity: 1;
             }
             
