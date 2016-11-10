@@ -95,6 +95,10 @@
             </section>
             <section id="half2" class ="half2">
                 <div style="overflow:auto;">
+				<?php
+					$subtitle = "Contact Information";
+					echo "<h3>$subtitle</h3>";
+				?>
                     <p>Below is the table containing all of our groups work emails if you need to contact them for any reason.</p>
                     <table style="float:left;" border="1" cellspacing="3" cellpadding="3">
                             <caption>Members of Group 15 Contact Emails</caption>
