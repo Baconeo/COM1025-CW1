@@ -20,6 +20,7 @@ h3{text-decoration:underline;}
 <h1 class="main"> Sam's Personal Page </h1><hr>
 </div>
 <h4 style="text-align:right;">My Personal Page Navigation:<br><a href="#OthInt">- Other Interests</a></h4>
+<img src="../images/member_6407279_photoone.jpg" alt="A photo of Sam Rowe" style="width:300px;height:250px;display:block;margin:auto;border-radius:10px">
 <br>
 <h3 title="General Information about my life">General Information</h3>
 <p>This page contains information about my life currently. It has details about my hobbies, interests and about my life in general. Previously, I went to Christ's College Sixth form in Guildford in which I got my A levels and made some very good friends. I am currently a student, in my first year, at the University of Surrey and I am studying Computing and Information Technology. I find my studies challenging but I take them <span id="serious">very seriously</span> as I want to have a successful career in my chosen field. I also have many hobbies and interests that are very varied as I enjoy many different things. Some of my hobbies and interests include:</p>
