@@ -1,0 +1,32 @@
+<course xml:lang="en">
+    <student>
+        <URN>6407279</URN>
+        <name>Sam Rowe</name>
+        <coursetitle>CIT</coursetitle>
+    </student>
+    <student>
+        <URN>6426813</URN>
+        <name>Callum Seymour</name>
+        <coursetitle>CS</coursetitle>
+    </student>
+    <student>
+        <URN>6416585</URN>
+        <name>Robert Bacon</name>
+        <coursetitle>CS</coursetitle>
+    </student>
+    <student>
+        <URN>6460017</URN>
+        <name>Thushanthy Thillainathan</name>
+        <coursetitle>CIT</coursetitle>
+    </student>
+    <student>
+        <URN>6437280</URN>
+        <name>Robbie Murray</name>
+        <coursetitle>CS</coursetitle>
+    </student>
+    <student>
+        <URN>6429748</URN>
+        <name>Lukas Rygh</name>
+        <coursetitle>CS</coursetitle>
+    </student>
+</course>
