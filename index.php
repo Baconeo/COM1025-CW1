@@ -1,19 +1,18 @@
-<!DOCTYPE HTML>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
     <?php include('./common/header.php') ?>
 
     <head>
         <title>Group 15</title>
-        <meta charset="UTF-8">
-	<link type="text/css" rel="stylesheet" href="css/group.css">
-        
-        <style type = "text/css">
-            ul{
-                    margin: auto;
-                    text-align: center;
-                    padding: 100px
-                    }
-                    
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+		<link type="text/css" rel="stylesheet" href="css/group.css">
+		<style type = "text/css">
+		ul{
+			margin: auto;
+			text-align: center;
+			padding: 100px
+			}
+
 		li {
 			display: inline-block;
 			width: 150px;
@@ -50,13 +49,9 @@
     </head>
     <body>
         <div id="split container">
-        <header>
-            <section class ="half">
             <section id="half" class ="half">
                 <h1 style="text-align:center">Group 15's Page!</h1>
                 <h2><marquee>Welcome To Our Group Page</marquee></h2>
-        </header>
-        <main>
                 <p>This is group 15's main page! To access any of our members individual pages please click on their image below. This site will contain information about our members and their hobbie and interests. Their work email is also listed on this page should you wish to contact them. Enjoy!</p>
                 <h3 title="Click the image of the member to access their page">Our Members:</h3>
                 <ul>
@@ -98,10 +93,12 @@
                     </li>
                 </ul>
             </section>
-        </main>
-        <footer>
             <section id="half2" class ="half2">
                 <div style="overflow:auto;">
+				<?php
+					$subtitle = "Contact Information";
+					echo "<h3>$subtitle</h3>";
+				?>
                     <p>Below is the table containing all of our groups work emails if you need to contact them for any reason.</p>
                     <table style="float:left;" border="1" cellspacing="3" cellpadding="3">
                             <caption>Members of Group 15 Contact Emails</caption>
@@ -150,7 +147,6 @@
                     </div>
                 </div>
             </section>
-        </footer>    
         </div>
     </body>
 </html>
