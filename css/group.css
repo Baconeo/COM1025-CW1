@@ -1,6 +1,7 @@
 html{
     background-color: #C6E1F7;
     background-image: url("../images/BackgroundDraft1.png");
+    background-attachment: fixed;
     background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -60,7 +61,7 @@ div.contactForm {
 }
 
 div.prim-navigation {
-  width: 100%;
+  width: 99%;
   border-bottom: 3px solid #7d1010;
   background-color: #222222;
   text-align: center;
@@ -75,7 +76,7 @@ div.prim-navigation > div {
 div.prim-navigation > div > div {
   width: auto;
   display: inline-block;
-  *display: inline;
+  display: inline;
   position: relative;
   text-transform: uppercase;
 }
