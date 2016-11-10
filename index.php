@@ -55,37 +55,37 @@
                     <li>
                         <a href="profiles/member_6426813.php">
                             <img src = "images/Placeholder_person.jpg" class="pics">
-                            <div class="textoverlay"><p class="names">Callum Seymour</p></div>
+                            <div class="textoverlay"><p class="names" title="Callum Seymour" >Callum Seymour</p></div>
                         </a>
                     </li>
                     <li> 
                         <a href="profiles/member_6407279.php">
                             <img src = "images/Placeholder_person.jpg" class="pics">
-                            <div class="textoverlay"><p class="names">Sam Rowe</p></div>
+                            <div class="textoverlay"><p class="names" title="Sam Rowe" >Sam Rowe</p></div>
                         </a>
                     </li>
                     <li>
                         <a href="profiles/member_6416585.php">
                             <img src = "images/Placeholder_person.jpg" class="pics">
-                            <div class="textoverlay"><p class="names">Robert Bacon</p></div>
+                            <div class="textoverlay"><p class="names" title="Robert Bacon" >Robert Bacon</p></div>
                         </a>
                     </li>
                     <li> 
                         <a href="profiles/member_6460017.php">
                             <img src = "images/Placeholder_person.jpg" class="pics">
-                            <div class="textoverlay"><p class="names">Thushanthy Thillainathan</p></div>
+                            <div class="textoverlay"><p class="names" title="Thushanthy Thillainathan" >Thushanthy Thillainathan</p></div>
                         </a>
                     </li>
                     <li> 
                         <a href="profiles/member_6437280.php">
                             <img src = "images/Placeholder_person.jpg" class="pics">
-                            <div class="textoverlay"><p class="names">Robbie Murray</p></div>
+                            <div class="textoverlay"><p class="names" title="Robie Murray" >Robbie Murray</p></div>
                         </a>
                     </li>
                     <li> 
                         <a href="profiles/member_6429748.php">
                             <img src = "images/Placeholder_person.jpg" class="pics">
-                            <div class="textoverlay"><p class="names">Lukas Rygh</p></div>
+                            <div class="textoverlay"><p class="names" title="Lukas Rygh" >Lukas Rygh</p></div>
                         </a>
                     </li>
                 </ul>

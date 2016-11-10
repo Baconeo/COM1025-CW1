@@ -35,10 +35,22 @@
 	<h2>A brief introduction</h2>
 		<p>This is my personal page which briefly details my life, including information about my education and future plans, as well as my hobbbies and interests.</p>
 	
-	<p class = "headings">Background</p>
+	<h2>Contents</h2>
+		<ul>
+			<li><a href="#background">Background</a></li>
+			<li><a href="#education">Education</a></li>
+			<li><a href="#dates">Key dates</a></li>
+			<li><a href="#hobbies">Hobbies/interests</a></li>
+			<li><a href="#influences">Influences</a></li>
+		</ul>
 	
+	<div id="background">
+		<p class = "headings">Background</p>
+	</div>
+	
+	<div id="education">
 	<p class = "headings">Education</p>
-		<table>
+		<table id="exams">
 			<tr>
 				<th>Exam level</th>
 				<th>Subject</th>
@@ -104,17 +116,34 @@
 				<td>B</td>
 			</tr>
 		</table>
+	</div>
 	
-	<p class = "headings">Hobbies / interests</p>
-	<ul>
-		<li>Video Games</li>
-		<li>Game Of Thrones / A Song Of Ice And Fire</li>
-		<li>Star wars</li>
-		
-	</ul>
-	<p class = "headings">Influences</p>
+	<div id="dates">
+		<p class = "headings">Key dates</p>
 		<?php
-			$influences = array();
+			$dates = array(array("date" => "1998", "event" => "was born"), 
+						   array("date" => "2002", "event" => "started primary school at Heathbrook Primary School"),
+						   array("date" => "2008", "event" => "my brother (Kieran) was born"),
+						   array("date" => "2009", "event" => "Started secondary school at Southfields Community College"),
+						   array("date" => "2014", "event" => "Started sixth form at Southfields Academy"),
+						   array("date" => "2014", "event" => "moved out of London to Kent"),
+						   array("date" => "2016", "event" => "started university at the University Of Surrey"));
+						   
+			foreach ($dates as $date) {
+				echo "In $date[date] I $date[event] <br>";
+			}			   
 		?>
+		
+	</div>
+
+	<div id="hobbies">
+		<p class = "headings" id="hobbies">Hobbies / interests</p>
+	</div>
+		
+
+	
+	<div id ="influences">
+		<p class = "headings">Influences</p>
+	</div>	
     </body>
 </html>
