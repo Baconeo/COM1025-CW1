@@ -4,7 +4,7 @@
 
     <head>
         <meta http-equiv="Content-type" content="text/html;charset=utf-8" />
-
+        <link type="text/css" rel="stylesheet" href="../css/group.css">   
         <title>Robert Bacon's Profile</title>
         <style type='text/css'>
             div {

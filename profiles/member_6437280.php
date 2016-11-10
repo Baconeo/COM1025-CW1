@@ -46,6 +46,16 @@
             Content of the paragraph
         </p>
         
+        <?php
+        $words = array("the ", "quick ", "brown ", "fox ",
+        "jumped ", "over ", "the ", "lazy ", "dog ");
+        shuffle($words);
+        foreach ($words as $word) {
+            echo $word;
+        };
+        
+        unset($word);
+        ?>
         <ul>
             <li>Content of the list</li>
             <li>Content of the list</li>

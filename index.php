@@ -13,22 +13,25 @@
                     text-align: center;
                     padding: 100px
                     }
-
-            li {
-                    display: inline-block;
-                    width: 150px;
-                    position: relative;
-            }
-            table {
-                border-collapse:collapse;
-            }
-            th {
-                background-color: #91EFA6;
-            }
-            #split container{
-                height:50%;
-            }
-        </style>
+                    
+		li {
+			display: inline-block;
+			width: 150px;
+			position: relative;
+		}
+                table {
+                    border-collapse:collapse;
+                }
+                th {
+                    background-color: #91EFA6;
+                }
+                .half{
+                    top:100%;
+                }
+                .half2{
+                    top:100%;
+                }                
+		</style>
         
         <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'> 
         
@@ -49,6 +52,7 @@
         <div id="split container">
         <header>
             <section class ="half">
+            <section id="half" class ="half">
                 <h1 style="text-align:center">Group 15's Page!</h1>
                 <h2><marquee>Welcome To Our Group Page</marquee></h2>
         </header>
@@ -59,44 +63,44 @@
                     <li>
                         <a href="profiles/member_6426813.php">
                             <img src = "images/Placeholder_person.jpg" class="pics">
-                            <div class="textoverlay"><p class="names">Callum Seymour</p></div>
+                            <div class="textoverlay"><p class="names" title="Callum Seymour" >Callum Seymour</p></div>
                         </a>
                     </li>
                     <li> 
                         <a href="profiles/member_6407279.php">
                             <img src = "images/Placeholder_person.jpg" class="pics">
-                            <div class="textoverlay"><p class="names">Sam Rowe</p></div>
+                            <div class="textoverlay"><p class="names" title="Sam Rowe" >Sam Rowe</p></div>
                         </a>
                     </li>
                     <li>
                         <a href="profiles/member_6416585.php">
                             <img src = "images/Placeholder_person.jpg" class="pics">
-                            <div class="textoverlay"><p class="names">Robert Bacon</p></div>
+                            <div class="textoverlay"><p class="names" title="Robert Bacon" >Robert Bacon</p></div>
                         </a>
                     </li>
                     <li> 
                         <a href="profiles/member_6460017.php">
                             <img src = "images/Placeholder_person.jpg" class="pics">
-                            <div class="textoverlay"><p class="names">Thushanthy Thillainathan</p></div>
+                            <div class="textoverlay"><p class="names" title="Thushanthy Thillainathan" >Thushanthy Thillainathan</p></div>
                         </a>
                     </li>
                     <li> 
                         <a href="profiles/member_6437280.php">
                             <img src = "images/Placeholder_person.jpg" class="pics">
-                            <div class="textoverlay"><p class="names">Robbie Murray</p></div>
+                            <div class="textoverlay"><p class="names" title="Robie Murray" >Robbie Murray</p></div>
                         </a>
                     </li>
                     <li> 
                         <a href="profiles/member_6429748.php">
                             <img src = "images/Placeholder_person.jpg" class="pics">
-                            <div class="textoverlay"><p class="names">Lukas Rygh</p></div>
+                            <div class="textoverlay"><p class="names" title="Lukas Rygh" >Lukas Rygh</p></div>
                         </a>
                     </li>
                 </ul>
             </section>
         </main>
         <footer>
-            <section class ="half2">
+            <section id="half2" class ="half2">
                 <div style="overflow:auto;">
                     <p>Below is the table containing all of our groups work emails if you need to contact them for any reason.</p>
                     <table style="float:left;" border="1" cellspacing="3" cellpadding="3">
