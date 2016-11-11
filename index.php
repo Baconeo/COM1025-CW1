@@ -70,7 +70,7 @@
                     </li>
                     <li>
                         <a href="profiles/member_6416585.php">
-                            <img src = "images/Placeholder_person.jpg" class="pics">
+                            <img src = "images/member_6416585.jpg" class="pics">
                             <div class="textoverlay"><p class="names" title="Robert Bacon" >Robert Bacon</p></div>
                         </a>
                     </li>
