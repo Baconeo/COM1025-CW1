@@ -58,7 +58,7 @@
 		</div>
 		<?php
 			$title = "Information about my Interests";
-			echo "<h3>$title</h3>"
+			echo "<h3>$title</h3>";
 		?>
 		<p>Although these are my main interests, I do enjoy doing things outside of the activities listed above such as walking my dog and cooking. However, I find that the hobbies and interests that I have listed above to be the things which I enjoy the most and have the <span class="excited">best time</span> while I am doing them. I have had many different influences which have led me to have to have such a diverse range of interests. These range from other family members interests to enjoyment of American culture. Below, I have again listed out my different hobbies and where I first became interested with them.</p>
 		<table border="1" cellspacing="2" cellpadding="2">
