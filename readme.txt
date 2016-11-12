@@ -1,28 +1,43 @@
 index.php
+	The homepage for group 15's website.
 
-Profiles Folder
+-Profiles Folder
 
 member_6407279.php
+	Member 6407279's (Sam Rowe) page of the site
 
 member_6416585.php
+	Member 6416585's (Robert Bacon) page of the site
 
 member_6426813.php
+	Member 6426813's (Callum Seymour) page of the site
 
 member_6429748.php
+	Member 6429748's (Lukas Rygh) page of the site
 
 member_6437280.php
+	Member 6437280's (Robbie Murray) page of the site
 
 member_6460017.php
+	Member 6460017's (Thushanthy Thillainathan) page of the site
 
-Images Folder
+-Images Folder
 
-Data Folder
+member_6407279.jpg
+	An image of Member 6407279 (Sam Rowe) which is on the homepage
+	
+member_6407279_photoone.jpg
+	An image of Member 6407279 (Sam Rowe) which is on his individual page
+	
 
-CSS Folder
+
+-Data Folder
+
+-CSS Folder
 
 group.css
 
-Common Folder
+-Common Folder
 
 footer.php
 

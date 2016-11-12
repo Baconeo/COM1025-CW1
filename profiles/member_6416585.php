@@ -38,7 +38,7 @@
         <div id='frontpage'>
         <div>
             <h1 style="text-align:center; position:relative; padding-top:70px;">Robert Bacon's Profile</h1>
-            <img src = "../images/Placeholder_person.jpg" class="pics">
+            <img src = "../images/member_6416585.jpg" class="pics">
             <table>
                 <tr>
                     <th>Content</th>

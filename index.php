@@ -5,32 +5,38 @@
     <head>
         <title>Group 15</title>
         <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-		<link type="text/css" rel="stylesheet" href="css/group.css">
-		<style type = "text/css">
-		ul{
-			margin: auto;
-			text-align: center;
-			padding: 100px
-			}
-
-		li {
-			display: inline-block;
-			width: 150px;
-			position: relative;
+        
+        <link type="text/css" rel="stylesheet" href="css/group.css">
+        <style type = "text/css">
+        ul{
+            margin: auto;
+            text-align: center;
+            padding: 100px
+        }
+		a.topLink{
+			color: black;
+			text-decoration: none;
+			font-weight: bold;
 		}
-                table {
-                    border-collapse:collapse;
-                }
-                th {
-                    background-color: #91EFA6;
-                }
-                .half{
-                    top:100%;
-                }
-                .half2{
-                    top:100%;
-                }                
-		</style>
+
+        li {
+            display: inline-block;
+            width: 150px;
+            position: relative;
+        }
+        table {
+            border-collapse:collapse;
+        }
+        th {
+            background-color: #91EFA6;
+        }
+        .half{
+            top:100%;
+        }
+        .half2{
+            top:200%;
+        }                
+        </style>
         
         <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'> 
         
@@ -52,6 +58,9 @@
             <section id="half" class ="half">
                 <h1 style="text-align:center">Group 15's Page!</h1>
                 <h2><marquee>Welcome To Our Group Page</marquee></h2>
+				<h3>Page Navigation:</h3>
+				<h5><a href="#table" class="topLink">-Member Information Table</a></h5>
+				<h3>Introduction</h3>
                 <p>This is group 15's main page! To access any of our members individual pages please click on their image below. This site will contain information about our members and their hobbie and interests. Their work email is also listed on this page should you wish to contact them. Enjoy!</p>
                 <h3 title="Click the image of the member to access their page">Our Members:</h3>
                 <ul>
@@ -63,13 +72,13 @@
                     </li>
                     <li> 
                         <a href="profiles/member_6407279.php">
-                            <img src = "images/Placeholder_person.jpg" class="pics">
+                            <img src = "images/member_6407279.jpg" class="pics">
                             <div class="textoverlay"><p class="names" title="Sam Rowe" >Sam Rowe</p></div>
                         </a>
                     </li>
                     <li>
                         <a href="profiles/member_6416585.php">
-                            <img src = "images/Placeholder_person.jpg" class="pics">
+                            <img src = "images/member_6416585.jpg" class="pics">
                             <div class="textoverlay"><p class="names" title="Robert Bacon" >Robert Bacon</p></div>
                         </a>
                     </li>
@@ -100,7 +109,7 @@
 					echo "<h3>$subtitle</h3>";
 				?>
                     <p>Below is the table containing all of our groups work emails if you need to contact them for any reason.</p>
-                    <table style="float:left;" border="1" cellspacing="3" cellpadding="3">
+                    <table style="float:left;" border="1" cellspacing="3" cellpadding="3" id="table">
                             <caption>Members of Group 15 Contact Emails</caption>
                             <tr>
                                     <th id="white">Name</th>
