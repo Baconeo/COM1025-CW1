@@ -9,15 +9,32 @@
         <style type="text/css">
             h1.main{
                 text-align: center;
-                background-color: #FFC474;   
+                background-color: #FFC474;
+                font-size: 3em;
             }
             
             img.pics{
-                height: 150px;
-                width: 150px;
+                height: 300px;
+                width:auto;
+                position: relative;
+                padding: 10px;
+            }
+            
+            img.profile{
+                height: 300px;
+                width:auto;
                 position: absolute;
                 right: 10px;
                 padding: 10px;
+                z-index: 1000;
+            }
+            
+            .rotate270 {
+                -webkit-transform: rotate(90deg);
+                -moz-transform: rotate(90deg);
+                -o-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                transform: rotate(90deg);
             }
             
             th{ 
@@ -50,7 +67,13 @@
             </h1>
         </span>
         
-        <img src = "../images/Placeholder_person.jpg" class='pics'>
+        <p> 
+            Hi. My name is Robbie Murray and I am currently studying computer science at the University of Surrey, located in Guildford. I studied Maths, Physics and Computing for A levels; I also took a year out and chose to study music instead of the typic travel around.
+        </p>
+        
+        
+        
+        <img src = "../images/member_6437280_3.jpg" class='profile' title="This photo is of me, taken by my brother, in the Ninh Binh province in Vietname">
         
         <div class="grey">
             <p>
@@ -70,8 +93,12 @@
                 unset($interests);?>
             </ul>
 
+            <audio controls> 
+                <source src="../audio/member_6437280.wav" type="audio/wav">
+            </audio>
+            
             <p> 
-                Here are my three extreme sports that I want to try out
+                Here are three extreme sports that I want to try out
             </p>
 
             <?php
@@ -89,23 +116,47 @@
         </div>
         
         
+        
+        <p>
+            Here is a table with my A level grades.
+        </p>
+        <?php
+        $xml=simplexml_load_file("../data/member_6437280.xml"); 
+        ?>
+        
         <table style="border-collapse: collapse;">
             <tr>
-                <th>Table heading 1</th>
-                <th>Table heading 2</th>
-                <th>Table heading 3</th>
+                <th>Subject</th>
+                <th>Grade</th>
+                <th>Exam Board</th>
             </tr>
             <tr>
-                <td>R1 D1</td>
-                <td>R1 D2</td>
-                <td>R1 D3</td>
+                <td><?php echo $xml->subject[0]->name; ?></td>
+                <td><?php echo $xml->subject[0]->grade; ?></td>
+                <td><?php echo $xml->subject[0]->examboard; ?></td>
             </tr>
             <tr>
-                <td>R2 D1</td>
-                <td>R2 D2</td>
-                <td>R2 D3</td>
+                <td><?php echo $xml->subject[1]->name; ?></td>
+                <td><?php echo $xml->subject[1]->grade; ?></td>
+                <td><?php echo $xml->subject[1]->examboard; ?></td>
+            </tr>
+            <tr>
+                <td><?php echo $xml->subject[2]->name; ?></td>
+                <td><?php echo $xml->subject[2]->grade; ?></td>
+                <td><?php echo $xml->subject[2]->examboard; ?></td>
             </tr>
         </table>
+        
+        <p>
+            Here are some photos that I have taken.
+        </p>
+        
+        <img src = "../images/member_6437280_1.jpg" class='pics' title="This is a photo of a cylcist, cyling round the roads at Centennial Park in Sydney Australia.">
+        <img src = "../images/member_6437280_2.jpg" class='pics' title="This is a photo of back of my friends house in the early hours of a new year.">
+        <img src = "../images/member_6437280_4.jpg" class='pics' title="This is a panoramic photo of the Sólheimajökull glacier in Iceland.">
+        <img src = "../images/member_6437280_5.jpg" class='pics' title="This is a photo of the cliffs by the village of Vík í Mýrdal in Iceland."> 
+        <img src = "../images/member_6437280_6.jpg" class='pics' title="This is a photo of my brother taken at the Summer Palace in Bejing, China.">
+        <img src = "../images/member_6437280_7.jpg" class='pics' title="This is a photo taken at the top of the Cugnai Chairlift in Val-d'Isere, France.">
         
     </body>
 </html>

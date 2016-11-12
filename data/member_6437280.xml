@@ -1,49 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<xs:element name="alevelgrades">
-    <xs:complexType>
-        <xs:sequence>
-            <xs:element name="computing" />
-                <xs:complexType>
-                    <xs:sequence>
-                        <xs:element name="grade" type="xs:char" />
-                        <xs:element name="examboard" type="xs:string" />
-                    </xs:sequence>
-                </xs:complexType> 
-            </xs:element>
-            <xs:element name="physics" />
-                <xs:complexType>
-                    <xs:sequence>
-                        <xs:element name="grade" type="xs:char" />
-                        <xs:element name="examboard" type="xs:string" />
-                    </xs:sequence>
-                </xs:complexType> 
-            </xs:element> 
-            <xs:element name="maths" />
-                <xs:complexType>
-                    <xs:sequence>
-                        <xs:element name="grade" type="xs:char" />
-                        <xs:element name="examboard" type="xs:string" />
-                    </xs:sequence>
-                </xs:complexType> 
-            </xs:element>                  
-        </xs:sequence>
-    </xs:complexType>
-</xs:element>
-</xs:schema>
+
 
 <alevelgrades xml:lang="en">
-    <computing>
+    <subject>
+        <name>Computing</name>
         <grade>B</grade>
         <examboard>OCR</examboard>
-    </computing>
-    <physics>
+    </subject>
+    <subject>
+        <name>Physics</name>
         <grade>B</grade>
         <examboard>AQA</examboard>
-    </physics>
-    <maths>
+    </subject>
+    <subject>
+        <name>Maths</name>
         <grade>A</grade>
         <examboard>OCR</examboard>
-    </maths>
+    </subject>
 </alevelgrades>
