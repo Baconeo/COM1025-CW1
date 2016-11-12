@@ -5,32 +5,33 @@
     <head>
         <title>Group 15</title>
         <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-		<link type="text/css" rel="stylesheet" href="css/group.css">
-		<style type = "text/css">
-		ul{
-			margin: auto;
-			text-align: center;
-			padding: 100px
-			}
+        
+        <link type="text/css" rel="stylesheet" href="css/group.css">
+        <style type = "text/css">
+        ul{
+                margin: auto;
+                text-align: center;
+                padding: 100px
+                }
 
-		li {
-			display: inline-block;
-			width: 150px;
-			position: relative;
-		}
-                table {
-                    border-collapse:collapse;
-                }
-                th {
-                    background-color: #91EFA6;
-                }
-                .half{
-                    top:100%;
-                }
-                .half2{
-                    top:100%;
-                }                
-		</style>
+        li {
+                display: inline-block;
+                width: 150px;
+                position: relative;
+        }
+        table {
+            border-collapse:collapse;
+        }
+        th {
+            background-color: #91EFA6;
+        }
+        .half{
+            top:100%;
+        }
+        .half2{
+            top:200%;
+        }                
+        </style>
         
         <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'> 
         
@@ -69,7 +70,7 @@
                     </li>
                     <li>
                         <a href="profiles/member_6416585.php">
-                            <img src = "images/Placeholder_person.jpg" class="pics">
+                            <img src = "images/member_6416585.jpg" class="pics">
                             <div class="textoverlay"><p class="names" title="Robert Bacon" >Robert Bacon</p></div>
                         </a>
                     </li>

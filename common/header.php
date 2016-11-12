@@ -10,8 +10,7 @@
     
     ?>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>     
     
     <?php
     // Cookie Creation
@@ -26,6 +25,7 @@
     // Remove everything after the last '.' in the string
     $value = strtok($value, '.');
    
+    // Check if the cookie is set already, if it is we append to what is currently within
     if (isset($_COOKIE[$name])) {
         $value = $_COOKIE[$name] . " / " . $value;
     }
