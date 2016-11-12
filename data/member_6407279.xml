@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<personal xml:lang="en">
+	<name>Sam Rowe</name>
+	<age>18</age>
+	<alevels>
+		<informationtechnology>
+			<grade>A</grade>
+		</informationtechnology>
+		<maths>
+			<grade>B</grade>
+		</maths>
+		<economics>
+			<grade>B</grade>
+		</economics>
+	</alevels>
+	<dogsname gender="female">Willow</dogsname>
+	<places>
+		<hometown>Guildford</hometown>
+		<bestcity>London</bestcity>
+		<holiday>Florida, Cleethorpes and Italy</holiday>
+	</places>
+	<education>
+		<primary>Pirbright Primary School</primary>
+		<secondary qualification="GCSE">Christ's College Secondary School</secondary>
+		<college qualification="A-Levels">Christ's College Sixth Form</college>
+		<university>University of Surrey</university>
+	</education>
+</personal>
