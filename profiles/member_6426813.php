@@ -1,16 +1,39 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
-	<?php include('../common/header.php') ?>
-    <head>
-        <title>Callum's page</title>
+<head> 
+		<?php include('../common/header.php') ?>
         <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+		<link type="text/css" rel="stylesheet" href="../css/group.css"> 
+		<title>Callum's page</title>		
 		<style type = text/css>
-		h1{
-			text-align: center;
+		div.top{
 			background-color: #00ff99;
+			text-align:center;
+			display: inline-block;
+			width: 100%;
+			height: 100px;
+			position: relative;
+			border-style:solid;
 		}
-		.headings{
+		div.pic{
+			position: absolute;
+			top: 0;
+		    right: 0;
+			width: 100px;
+			height: 100%;
+		}	
+		img{
+			height:100px;
+		}	
+		h2.headings{
+			color: #286BA3;
+		}
+		h3.headings{
 			font-weight:bold;
+			color: #4686BC;
+		}
+		#family{
+			padding: 20px;
 		}
 		table {
 			border-collapse: collapse;
@@ -26,30 +49,65 @@
 		th{
 			background-color: #00ff99;
 		}
-			
+		span{
+			font-weight:bold;}	
 		</style>
     </head>
     <body>
-	<h1>Callum's page</h1>
+	<div class="top">
+		<h1>Callum's page</h1>
+		<div class="pic"><img src="../images/member_6426813_2.jpeg" title="me and Rosie (my dog)"></div>
+	<?php
+		//function displays time and date that user has accessed webpage at 
+		//used http://www.w3schools.com/php/php_date.asp as a guide 
+		function displayTimeAndDate(){
+			//displays date in suitable format
+			$date = date("d/m/"."20"."y");
+			//changes timezone to GMT+00:00 as that is uk time 
+			date_default_timezone_set("Europe/London");
+			//displays time in suitable format
+			$time = date("h:i:sa");
+			//prints time/date in a user-friendly format
+			echo "Accessed page at $time on $date";
+		}
+		displayTimeAndDate();
+	?>
+	</div>
+	<h2 class="headings">A brief introduction</h2>
+		<p>This is my personal page which briefly details my life, including information about my <span>education</span>, as well as my <span>key events in my life</span> and <span>hobbbies and interests</span>.</p>
 	
-	<h2>A brief introduction</h2>
-		<p>This is my personal page which briefly details my life, including information about my education and future plans, as well as my hobbbies and interests.</p>
-	
-	<h2>Contents</h2>
+	<h2 class="headings">Contents</h2>
 		<ul>
-			<li><a href="#background">Background</a></li>
+			<li><a href="#xml">Background information</a></li>
 			<li><a href="#education">Education</a></li>
 			<li><a href="#dates">Key dates</a></li>
 			<li><a href="#hobbies">Hobbies/interests</a></li>
-			<li><a href="#influences">Influences</a></li>
 		</ul>
 	
-	<div id="background">
-		<p class = "headings">Background</p>
+	<div id="xml">
+		<h3 class = "headings">Background information</h3>
+		<?php
+			$xml = simplexml_load_file("../data/member_6426813.xml");
+			echo "name: ", $xml->name, "<br />";
+			echo "age: ", $xml->age, "<br />";
+			echo "birthday: ", $xml->birthday, "<br />";
+			echo "Immediate family: <br />";
+			echo "<div id='family'>";
+			foreach($xml->family->person as $person){
+					echo $person->name," - ",$person->relation, "<br />";
+			}
+			echo "</div>";
+			echo "Where I have lived: <br />";
+			echo "<div id='family'>";
+			foreach($xml->places_lived->place as $place){
+					echo $place->location," - ",$place->time_lived, "<br />";
+			}
+			echo "</div>";
+		?>
 	</div>
 	
 	<div id="education">
-	<p class = "headings">Education</p>
+	<h3 class = "headings">Education</h2>
 		<table id="exams">
 			<tr>
 				<th>Exam level</th>
@@ -119,7 +177,7 @@
 	</div>
 	
 	<div id="dates">
-		<p class = "headings">Key dates</p>
+		<h3 class = "headings">Key dates</h2>
 		<?php
 			$dates = array(array("date" => "1998", "event" => "was born"), 
 						   array("date" => "2002", "event" => "started primary school at Heathbrook Primary School"),
@@ -133,17 +191,19 @@
 				echo "In $date[date] I $date[event] <br>";
 			}			   
 		?>
-		
 	</div>
 
 	<div id="hobbies">
-		<p class = "headings" id="hobbies">Hobbies / interests</p>
+		<h3 class = "headings">Hobbies / interests</h3>
+		<ul>
+			<li>Video games</li>
+			<li>Films (especially 80s/90s movies)</li>
+			<li>Game Of Thrones</li>
+			<li>Star Wars</li>
+			<li>coding</li>
+			<li>Hanging out with friends & famliy</li>
+			<li>Reading</li>
+		</ul>
 	</div>
-		
-
-	
-	<div id ="influences">
-		<p class = "headings">Influences</p>
-	</div>	
     </body>
 </html>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<info>
+	<name>Callum Seymour</name>
+	<age>18</age>
+	<birthday>18-07-1998</birthday>
+	<family>
+		<person>
+			<name>Petra Seymour</name>
+			<relation>Mother</relation>
+		</person>
+		<person>
+			<name>Neil Seymour</name>
+			<relation>Father</relation>
+		</person>
+		<person>
+			<name>Kieran Seymour</name>
+			<relation>Brother</relation>
+		</person>
+		<person>
+			<name>Rosie</name>
+			<relation>Dog</relation>	
+		</person>
+		<person>
+			<name>Tony Delgado</name>
+			<relation>Grandad</relation>
+		</person>
+		<person>
+			<name>David Seymour</name>
+			<relation>Grandad</relation>
+		</person>
+		<person>
+			<name>Elaine Bools</name>
+			<relation>Grandmother</relation>
+		</person>
+		<person>
+			<name>Maggie Desa</name>
+			<relation>Grandmother</relation>	
+		</person>
+	</family>
+	<places_lived>
+		<place>
+			<location>Lambeth</location>
+			<time_lived>3 years</time_lived>
+		</place>
+		<place>
+			<location>Croydon</location>
+			<time_lived>1 year</time_lived>
+		</place>
+		<place>	
+			<location>Battersea</location>
+			<time_lived>12 years</time_lived>
+		</place>
+		<place>	
+			<location>Kent</location>
+			<time_lived>2 years</time_lived>
+		</place>
+		<place>			
+			<location>Guildford</location>
+			<time_lived>Current residence (lived for 2 months)</time_lived>
+		</place>
+	</places_lived>
+</info>

@@ -66,7 +66,7 @@
                 <ul>
                     <li>
                         <a href="profiles/member_6426813.php">
-                            <img src = "images/Placeholder_person.jpg" class="pics">
+                            <img src = "images/member_6426813.jpg" class="pics">
                             <div class="textoverlay"><p class="names" title="Callum Seymour" >Callum Seymour</p></div>
                         </a>
                     </li>
