@@ -50,12 +50,14 @@
                     <?php endif; ?>
                 </div>
             </div>
-            <?php
-            // Cookie not set on first visit so will throw an error when trying to print if not set
-            if (isset($_COOKIE["previousPages"])) {
-                print $_COOKIE["previousPages"];
-            } 
-            ?>
+            <div>
+                <?php
+                // Cookie not set on first visit so will throw an error when trying to print if not set
+                if (isset($_COOKIE["previousPages"])) {
+                    print $_COOKIE["previousPages"];
+                } 
+                ?>
+            </div>
         </div>
     </body>
 </html>

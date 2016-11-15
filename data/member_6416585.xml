@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<person xml:lang="en">
-    <name>Shujun Li</name>
-    <title>Dr</title>
-    <role>Senior Lecturer</role>
-    <office>07 BB 02</office>
-    <email>Shujun.Li@surrey.ac.uk</email>
-    <URL>http://www.hooklee.com/</URL>
-    <hobbies type="UG">COM1025</hobbies>
-    <projects type="MSc">COMM046</projects>
-</person>
+<pcspecs>
+    <component>
+        <name>i5 2500k @ 4.4GHz</name>
+        <type>Processor</type>
+    </component>
+    <component>
+        <name>EVGA GTX 980</name>
+        <type>Graphics Card</type>      
+    </component>
+    <component>
+        <name>16GB Corsair Vengeance</name>
+        <type>RAM</type>         
+    </component>
+    <component>
+        <name>512GB SSD</name>
+        <type>Storage</type>         
+    </component>
+    <component>
+        <name>2TB HDD</name>
+        <type>Storage</type>         
+    </component>    
+</pcspecs>

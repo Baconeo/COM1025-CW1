@@ -13,12 +13,6 @@
             text-align: center;
             padding: 100px
         }
-		a.topLink{
-			color: black;
-			text-decoration: none;
-			font-weight: bold;
-		}
-
         li {
             display: inline-block;
             width: 150px;
@@ -107,10 +101,10 @@
             </section>
             <section id="half2" class ="half2">
                 <div style="overflow:auto;">
-				<?php
-					$subtitle = "Contact Information";
-					echo "<h3>$subtitle</h3>";
-				?>
+                    <?php
+                            $subtitle = "Contact Information";
+                            echo "<h3>$subtitle</h3>";
+                    ?>
                     <p>Below is the table containing all of our groups work emails if you need to contact them for any reason.</p>
                     <table style="float:left;" border="1" cellspacing="3" cellpadding="3" id="table">
 					<!--Linked to the group XML file and reading out the ifnromation into a table-->
