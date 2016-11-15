@@ -43,8 +43,10 @@
             
             tr,th,td{
                 border: 1px solid black;
+                padding: 15px;
+                text-align: center;
             }
-            
+      
             span {
                 color:#A0A0A0;
             }
@@ -73,7 +75,7 @@
         
         
         
-        <img src = "../images/member_6437280_3.jpg" class='profile' title="This photo is of me, taken by my brother, in the Ninh Binh province in Vietname">
+        <a href="#photos"><img src = "../images/member_6437280_3.jpg" class='profile' title="This photo is of me, taken by my brother, in the Ninh Binh province in Vietname"></a>
         
         <div class="grey">
             <p>
@@ -147,7 +149,7 @@
             </tr>
         </table>
         
-        <p>
+        <p id='photos'>
             Here are some photos that I have taken.
         </p>
         

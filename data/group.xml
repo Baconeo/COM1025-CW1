@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<group15 xml:lang="en">
+<!DOCTYPE group15 [
+<!ELEMENT URN (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT coursetitle (#PCDATA)>
+<!ELEMENT student (URN,name,coursetitle)>
+<!ELEMENT group15 (student)+>
+<!ATTLIST group15 xml:lang CDATA #REQUIRED>
+]>
+
+
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 <xs:element name="group15">
     <xs:complexType>
@@ -17,8 +26,9 @@
         </xs:sequence>
     </xs:complexType>
 </xs:element>
-</xs:schema>
+</xs:schema
 
+<group15 xml:lang="en">
     <student>
         <URN>6407279</URN>
         <name>Sam Rowe</name>
