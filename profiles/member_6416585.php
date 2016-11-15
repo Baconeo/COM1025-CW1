@@ -47,17 +47,16 @@
     <body>
         <div id='frontpage'>
             <h1 style="text-align:center; position:relative;">Robert Bacon's Profile</h1>
-            <img src = "../images/member_6416585.jpg" class="pics">
-            <table>
+            <table style='margin: 0 auto;'>
                 <tr>
-                    <th>Content</th>
+                    <th><h3>Content</h3></th>
                 </tr>
                 <tr>
-                    <td><a title="Hobbies that interest me" href="#hobbies">Hobbies</a></td>
-                    <td><a title="Previous projects I have been involved with"href="#projects">Previous Projects</a></td>
+                    <td><a class="topLink" title="Hobbies that interest me" href="#hobbies">Hobbies</a></td>
                 </tr>
             </table>
-            
+            <img style='margin: 0 auto;' src = "../images/member_6416585.jpg" class="pics">
+
             <div id='hobbies'>
                 <div>
                     <h2>Hobbies</h2>
@@ -75,6 +74,16 @@
                         <p>Airsoft is a game similar to paintball. Instead of shooting small balls of paint that explode on impact, airsoft uses small plastic 6mm bbs</p>
                         <!-- Source for image - https://www.quora.com/What-are-the-differences-between-paintball-and-airsoft -->
                         <img src='../images/member_6416565_1.jpg'>
+                        <h4>My kit:</h4>
+                        <ul>
+                            <?php
+                            $airsoftKit = ["Helmet", "Plate Carrier", "Belt Rig", "Camo Clothing", "Rifle", "Pistol"];
+                            foreach ($airsoftKit as $airsoftItem) : ?>
+                            <li>
+                                <?= $airsoftItem;  ?>
+                            </li>
+                            <?php endforeach; ?>
+                        </ul>
                     </section>
                     <section id="pcgaming">
                         <?php
