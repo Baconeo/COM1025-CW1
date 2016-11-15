@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE alevelgrades [
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT grade (#PCDATA)>
+<!ELEMENT examboard (#PCDATA)>
+<!ELEMENT subject (name,grade,examboard)>
+<!ELEMENT alevelgrades (subject)+>
+<!ATTLIST alevelgrades xml:lang CDATA #REQUIRED>
+]>
+
+
+<alevelgrades xml:lang="en">
+    <subject>
+        <name>Computing</name>
+        <grade>B</grade>
+        <examboard>OCR</examboard>
+    </subject>
+    <subject>
+        <name>Physics</name>
+        <grade>B</grade>
+        <examboard>AQA</examboard>
+    </subject>
+    <subject>
+        <name>Maths</name>
+        <grade>A</grade>
+        <examboard>OCR</examboard>
+    </subject>
+</alevelgrades>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE group15 [
+<!ELEMENT URN (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT coursetitle (#PCDATA)>
+<!ELEMENT student (URN,name,coursetitle)>
+<!ELEMENT group15 (student)+>
+<!ATTLIST group15 xml:lang CDATA #REQUIRED>
+]>
+
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="group15">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="student">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="URN" type="xs:integer" />
+                        <xs:element name="name" type="xs:string" />
+                        <xs:element name="coursetitle" type="xs:string" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+</xs:schema
+
+<group15 xml:lang="en">
+    <student>
+        <URN>6407279</URN>
+        <name>Sam Rowe</name>
+        <coursetitle>CIT</coursetitle>
+    </student>
+    <student>
+        <URN>6426813</URN>
+        <name>Callum Seymour</name>
+        <coursetitle>CS</coursetitle>
+    </student>
+    <student>
+        <URN>6416585</URN>
+        <name>Robert Bacon</name>
+        <coursetitle>CS</coursetitle>
+    </student>
+    <student>
+        <URN>6460017</URN>
+        <name>Thushanthy Thillainathan</name>
+        <coursetitle>CIT</coursetitle>
+    </student>
+    <student>
+        <URN>6437280</URN>
+        <name>Robbie Murray</name>
+        <coursetitle>CS</coursetitle>
+    </student>
+    <student>
+        <URN>6429748</URN>
+        <name>Lukas Rygh</name>
+        <coursetitle>CS</coursetitle>
+    </student>
+</group15>
