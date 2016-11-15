@@ -1,10 +1,10 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML>
 <html lang="en">
     <?php include('./common/header.php') ?>
 
     <head>
         <title>Group 15</title>
-        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+        <meta charset="UTF-8">
         
         <link type="text/css" rel="stylesheet" href="css/group.css">
         <style type = "text/css">
@@ -56,12 +56,15 @@
     <body>
         <div id="split container">
             <section id="half" class ="half">
+            <header>
                 <h1 style="text-align:center">Group 15's Page!</h1>
                 <h2><marquee>Welcome To Our Group Page</marquee></h2>
 				<h3>Page Navigation:</h3>
 				<h5><a href="#table" class="topLink">-Member Information Table</a></h5>
 				<h3>Introduction</h3>
                 <p>This is group 15's main page! To access any of our members individual pages please click on their image below. This site will contain information about our members and their hobbie and interests. Their work email is also listed on this page should you wish to contact them. Enjoy!</p>
+            </header>
+            <main>
                 <h3 title="Click the image of the member to access their page">Our Members:</h3>
                 <ul>
                     <li>
@@ -110,36 +113,55 @@
 				?>
                     <p>Below is the table containing all of our groups work emails if you need to contact them for any reason.</p>
                     <table style="float:left;" border="1" cellspacing="3" cellpadding="3" id="table">
-                            <caption>Members of Group 15 Contact Emails</caption>
+                        <?php
+                        $xml=simplexml_load_file("data/group.xml"); 
+                        ?>
+                            <caption>Members of Group 15 Details</caption>
                             <tr>
                                     <th id="white">Name</th>
                                     <th id="white">Email</th>
+                                    <th id="white">URN</th>
+                                    <th id="white">Course</th>
                             </tr>
                             <tr>
-                                    <td>Sam Rowe</td>
-                                    <td>sr00584@surrey.ac.uk</td>
+                                    <td><?php echo $xml->student[0]->name; ?></td>
+                                    <td><?php echo $xml->student[0]->email; ?></td>
+                                    <td><?php echo $xml->student[0]->URN; ?></td>
+                                    <td><?php echo $xml->student[0]->coursetitle; ?></td>
                             </tr>
                             <tr>
-                                    <td>Robbie Murray</td>
-                                    <td>rm00727@surrey.ac.uk</td>
+                                    <td><?php echo $xml->student[1]->name; ?></td>
+                                    <td><?php echo $xml->student[1]->email; ?></td>
+                                    <td><?php echo $xml->student[1]->URN; ?></td>
+                                    <td><?php echo $xml->student[1]->coursetitle; ?></td>
                             </tr>
                             <tr>
-                                    <td>Lukas Rygh</td>
-                                    <td>lr00341@surrey.ac.uk</td>
+                                    <td><?php echo $xml->student[2]->name; ?></td>
+                                    <td><?php echo $xml->student[2]->email; ?></td>
+                                    <td><?php echo $xml->student[2]->URN; ?></td>
+                                    <td><?php echo $xml->student[2]->coursetitle; ?></td>
                             </tr>
                             <tr>
-                                    <td>Callum Seymour</td>
-                                    <td>cs00916@surrey.ac.uk</td>
+                                    <td><?php echo $xml->student[3]->name; ?></td>
+                                    <td><?php echo $xml->student[3]->email; ?></td>
+                                    <td><?php echo $xml->student[3]->URN; ?></td>
+                                    <td><?php echo $xml->student[3]->coursetitle; ?></td>
                             </tr>
                             <tr>
-                                    <td>Robert Bacon</td>
-                                    <td>rb00573@surrey.ac.uk</td>
+                                    <td><?php echo $xml->student[4]->name; ?></td>
+                                    <td><?php echo $xml->student[4]->email; ?></td>
+                                    <td><?php echo $xml->student[4]->URN; ?></td>
+                                    <td><?php echo $xml->student[4]->coursetitle; ?></td>
                             </tr>
                             <tr>
-                                    <td>Thushanthy Thillainathan</td>
-                                    <td>tt00308@surrey.ac.uk</td>
+                                    <td><?php echo $xml->student[5]->name; ?></td>
+                                    <td><?php echo $xml->student[5]->email; ?></td>
+                                    <td><?php echo $xml->student[5]->URN; ?></td>
+                                    <td><?php echo $xml->student[5]->coursetitle; ?></td>
                             </tr>
                     </table>
+            </main>
+            <footer>
                     <div style="position:relative;" id="contactForm" class="contactForm">
                         <form action="mailto:sr00584@surrey.ac.uk,rm00727@surrey.ac.uk,lr00341@surrey.ac.uk,cs00916@surrey.ac.uk,rb00573@surrey.ac.uk,tt00308@surrey.ac.uk" id="mailtoform" method="POST">
                             <label>Your Email:</label><br />
@@ -155,6 +177,7 @@
                         <p>Form Submitted!</p>
                     </div>
                 </div>
+            </footer>
             </section>
         </div>
     </body>
