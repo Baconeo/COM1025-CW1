@@ -6,7 +6,7 @@
 <!ELEMENT coursetitle (#PCDATA)>
 <!ELEMENT email (#PCDATA)>
 <!ELEMENT student (URN,name,coursetitle)>
-<!ELEMENT group15 (student)+>
+<!ELEMENT group15 (student+)>
 <!ATTLIST group15 xml:lang CDATA #REQUIRED>
 ]>
 

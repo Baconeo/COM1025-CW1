@@ -1,9 +1,9 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML>
 <html lang="en">
 	<?php include('../common/header.php') ?>
 	<head>
 		<title>Sam's Personal Page</title>
-		<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+		<meta charset="UTF-8">
 		<link type="text/css" rel="stylesheet" href="../css/group.css">
 		<style type="text/css">
 			h1.main{
@@ -42,6 +42,7 @@
 			<h1 class="main"> Sam's Personal Page </h1><hr>
 		</div>
 		<h4 style="text-align:right;">My Personal Page Navigation:<br><a href="#OthInt">- Other Interests</a></h4>
+		<!--Used a small amount of CSS3 to make my image have curved corners-->
 		<img src="../images/member_6407279_photoone.jpg" alt="A photo of Sam Rowe" style="width:300px;height:250px;display:block;margin:auto;border-radius:10px">
 		<br>
 		<h3 title="General Information about my life">General Information</h3>
@@ -97,6 +98,7 @@
 		<br><br>
 		<h4 id="OthInt">Other Interests</h4>
 		<p>I also love to spend time with animals. I believe that this is because I was brought up in a family that care about animals and many of my friends have got pets so I feel comfortable around them. For example:</p>
+		<!--An array with a foreach statement to read it out-->
 		<?php 
 			$info = array (1 => array("Relation" => "friend", "Name" => "Jack", "animal" => "dog", "aniname" => "Steve"),2 => array("Relation" => "cousin", "Name" => "Nicola", "animal" => "dog", "aniname" => "Flash"),3 => array("Relation" => "friend", "Name" => "Ellie", "animal" => "dog", "aniname" => "Tilly"));
 
