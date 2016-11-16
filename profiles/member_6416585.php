@@ -22,6 +22,16 @@
                 position: absolute;
                 top: 300%;
             }
+            table {
+                color: black;
+                border: 3px solid #ccc;
+                border-radius: 4px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                width: 20%;
+                margin : 0 auto;
+                text-align: center;
+            }
         </style>
         <script>
             $(function() {
@@ -36,9 +46,13 @@
                 $("#pcgaming").hide();
                 $("#airsoft").show();                
                 
-                $('a').click(function() {
-                    $("#airsoft").toggle();
-                    $("#pcgaming").toggle();
+                $('#airsoftLink').click(function() {
+                    $("#airsoft").show();
+                    $("#pcgaming").hide();
+                });
+                $('#pcgamingLink').click(function() {
+                    $("#airsoft").hide();
+                    $("#pcgaming").show();
                 });
             });
         </script>
@@ -46,7 +60,7 @@
     
     <body>
         <div id='frontpage'>
-            <h1 style="text-align:center; position:relative;">Robert Bacon's Profile</h1>
+            <h1 style="background-color:#B22222;text-align:center; position:relative;">Robert Bacon's Profile</h1>
             <table style='margin: 0 auto;'>
                 <tr>
                     <th><h3>Content</h3></th>
@@ -55,18 +69,19 @@
                     <td><a class="topLink" title="Hobbies that interest me" href="#hobbies">- Hobbies</a></td>
                 </tr>
             </table>
-            <img style='margin: 0 auto;' alt="Robert Bacon's face" src = "../images/member_6416585.jpg" class="pics">
+            <br>
+            <img style='margin: 0 auto;display:block;width:250px;height:250px;' alt="Robert Bacon's face" src = "../images/member_6416585.jpg">
 
             <div id='hobbies'>
                 <div>
                     <h2>Hobbies</h2>
-                    <table>
+                    <table style='text-align:unset;'>
                         <tr>
                             <th>Click a hobby to bring up information</th>
                         </tr>
                         <tr>
-                            <td><a class="topLink" title="A sport that is similar to paintball" href="#hobbies">Airsoft</a></td>
-                            <td><a class="topLink" title="Games that I play on the PC" href="#hobbies">PC Gaming</a></td>
+                            <td><a id="airsoftLink" class="topLink" title="A sport that is similar to paintball" href="#hobbies">Airsoft</a></td>
+                            <td><a id="pcgamingLink" class="topLink" title="Games that I play on the PC" href="#hobbies">PC Gaming</a></td>
                         </tr>
                     </table>
                     <section id="airsoft">
