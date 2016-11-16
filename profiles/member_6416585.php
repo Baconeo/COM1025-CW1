@@ -52,10 +52,10 @@
                     <th><h3>Content</h3></th>
                 </tr>
                 <tr>
-                    <td><a class="topLink" title="Hobbies that interest me" href="#hobbies">Hobbies</a></td>
+                    <td><a class="topLink" title="Hobbies that interest me" href="#hobbies">- Hobbies</a></td>
                 </tr>
             </table>
-            <img style='margin: 0 auto;' src = "../images/member_6416585.jpg" class="pics">
+            <img style='margin: 0 auto;' alt="Robert Bacon's face" src = "../images/member_6416585.jpg" class="pics">
 
             <div id='hobbies'>
                 <div>
@@ -73,11 +73,11 @@
                         <h3><span style='color:grey; '>Airsoft</span></h3>
                         <p>Airsoft is a game similar to paintball. Instead of shooting small balls of paint that explode on impact, airsoft uses small plastic 6mm bbs</p>
                         <!-- Source for image - https://www.quora.com/What-are-the-differences-between-paintball-and-airsoft -->
-                        <img src='../images/member_6416565_1.jpg'>
+                        <img alt="Paintball vs BB" src='../images/member_6416565_1.jpg'>
                         <h4>My kit:</h4>
                         <ul>
                             <?php
-                            $airsoftKit = ["Helmet", "Plate Carrier", "Belt Rig", "Camo Clothing", "Rifle", "Pistol"];
+                            $airsoftKit = ["Head" => "Helmet", "Body" => "Plate Carrier", "Belt" => "Belt Rig", "Clothing" => "Camo Clothing", "Primary" => "Rifle", "Secondary" => "Pistol"];
                             foreach ($airsoftKit as $airsoftItem) : ?>
                             <li>
                                 <?= $airsoftItem;  ?>
@@ -103,7 +103,7 @@
                                 <?php echo $xmlData->component[2]->type; ?>:  <?php echo $xmlData->component[2]->name; ?>
                             </li>
                             <li>
-                                <?php echo $xmlData->component[3]->type; ?>:  <?php echo $xmlData->component[3]->name; ?> ¦ <?php echo $xmlData->component[4]->name;?>
+                                <?php echo $xmlData->component[3]->type; ?>:  <?php echo $xmlData->component[3]->name; ?> Â¦ <?php echo $xmlData->component[4]->name;?>
                             </li>                            
                         </ul>
                     </section>

@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pcspecs>
+
+<!DOCTYPE pcspecs [
+    <!ELEMENT component (name|type)*>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT type (#PCDATA)>
+    <!ELEMENT pcspecs (component)*>
+    <!ATTLIST pcspecs xml:lang CDATA #REQUIRED>
+]>
+
+<pcspecs xml:lang="en">
     <component>
         <name>i5 2500k @ 4.4GHz</name>
         <type>Processor</type>
