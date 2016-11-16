@@ -41,6 +41,24 @@
 		<div class="top">
 			<h1 class="main"> Sam's Personal Page </h1><hr>
 		</div>
+		<div style="text-align:center">
+		<!--A php function which writes todays date in two seperate formats
+		Used the table on http://php.net/manual/en/function.date.php to find the different initials-->
+			<?php
+			function todaysdate(){
+				$todayshort = date("j/n/Y");
+				$todaylong = date("l jS \of F Y");
+				
+				echo $todayshort."<br>".$todaylong;
+			}
+			todaysdate();
+			?>
+		<br>
+		<audio controls>
+			<source src="../audio/member_6407279.mp3" type="audio/mpeg">
+			Sam welcoming you to his page.
+		</audio>
+		</div>
 		<h4 style="text-align:right;">My Personal Page Navigation:<br><a href="#OthInt">- Other Interests</a></h4>
 		<!--Used a small amount of CSS3 to make my image have curved corners-->
 		<img src="../images/member_6407279_photoone.jpg" alt="A photo of Sam Rowe" style="width:300px;height:250px;display:block;margin:auto;border-radius:10px">
@@ -98,12 +116,41 @@
 		<br><br>
 		<h4 id="OthInt">Other Interests</h4>
 		<p>I also love to spend time with animals. I believe that this is because I was brought up in a family that care about animals and many of my friends have got pets so I feel comfortable around them. For example:</p>
-		<!--An array with a foreach statement to read it out-->
-		<?php 
-			$info = array (1 => array("Relation" => "friend", "Name" => "Jack", "animal" => "dog", "aniname" => "Steve"),2 => array("Relation" => "cousin", "Name" => "Nicola", "animal" => "dog", "aniname" => "Flash"),3 => array("Relation" => "friend", "Name" => "Ellie", "animal" => "dog", "aniname" => "Tilly"));
+			<!--An array with a foreach statement to read it out-->
+			<?php 
+				$info = array (1 => array("Relation" => "friend", "Name" => "Jack", "animal" => "dog", "aniname" => "Steve"),2 => array("Relation" => "cousin", "Name" => "Nicola", "animal" => "dog", "aniname" => "Flash"),3 => array("Relation" => "friend", "Name" => "Ellie", "animal" => "dog", "aniname" => "Tilly"));
 
-			foreach($info as $ID => $relation)
-				echo "<p>-My $relation[Relation]'s called $relation[Name] and they have a $relation[animal] called $relation[aniname].</p>";
-		?>
+				foreach($info as $ID => $relation)
+					echo "<p>-My $relation[Relation]'s called $relation[Name] and they have a $relation[animal] called $relation[aniname].</p>";
+			?>
+		<h3>Conclusion:</h3>
+		<p> As this is the end of my page I have dcided that the best way to end it would be to have a summary lsit with information which I have told before and information that I havent. Enjoy!:</p>
+			<?php
+			$personalxml = simplexml_load_file("../data/member_6407279.xml");
+			?>
+		<ul>
+			<li><?php echo $personalxml->name; ?></li>
+			<li><?php echo $personalxml->age; ?></li>
+			<li>A level grades</li>
+			<ul>
+				<li>IT: <?php echo $personalxml->alevels->informationtechnology->grade; ?></li>
+				<li>Maths: <?php echo $personalxml->alevels->maths->grade; ?></li>
+				<li>Economics: <?php echo $personalxml->alevels->economics->grade; ?></li>
+			</ul>
+			<li>My dog's name is <?php echo $personalxml->dogsname; ?></li>
+			<li>My favourite places are:</li>
+			<ul>
+				<li><?php echo $personalxml->places->hometown; ?></li>
+				<li><?php echo $personalxml->places->bestcity; ?></li>
+				<li>My best holidays are <?php echo $personalxml->places->holiday; ?></li>
+			</ul>
+			<li>I have been educated at:</li>
+			<ul>
+				<li>Primary: <?php echo $personalxml->education->primary; ?></li>
+				<li>Secondary: <?php echo $personalxml->education->secondary; ?></li>
+				<li>College: <?php echo $personalxml->education->college; ?></li>
+				<li>University: <?php echo $personalxml->education->university; ?></li>
+			</ul>
+		</ul>	
 	</body>
 </html>
