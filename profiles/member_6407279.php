@@ -54,6 +54,7 @@
 			todaysdate();
 			?>
 		<br>
+		<!--Use of the HTML5 audio tag to be able record and play a introduction to my page-->
 		<audio controls>
 			<source src="../audio/member_6407279.mp3" type="audio/mpeg">
 			Sam welcoming you to his page.
@@ -124,7 +125,7 @@
 					echo "<p>-My $relation[Relation]'s called $relation[Name] and they have a $relation[animal] called $relation[aniname].</p>";
 			?>
 		<h3>Conclusion:</h3>
-		<p> As this is the end of my page I have dcided that the best way to end it would be to have a summary lsit with information which I have told before and information that I havent. Enjoy!:</p>
+		<p> As this is the end of my page I have decided that the best way to end it would be to have a summary list with information which I have revealed before and information that I haven't mentioned. Enjoy!:</p>
 			<?php
 			$personalxml = simplexml_load_file("../data/member_6407279.xml");
 			?>
