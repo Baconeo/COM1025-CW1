@@ -5,7 +5,7 @@
     <head>
         <title>Group 15</title>
         <meta charset="UTF-8">
-        
+		
         <link type="text/css" rel="stylesheet" href="css/group.css">
         <style type = "text/css">
         ul{
@@ -107,7 +107,7 @@
                     ?>
                     <p>Below is the table containing all of our groups work emails if you need to contact them for any reason.</p>
                     <table style="float:left;" border="1" cellspacing="3" cellpadding="3" id="table">
-					<!--Linked to the group XML file and reading out the ifnromation into a table-->
+					<!--Linked to the group XML file and reading out the infromation into a table-->
                         <?php
                         $xml=simplexml_load_file("data/group.xml"); 
                         ?>
