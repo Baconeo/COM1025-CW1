@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Lukas xml:lang="en">
+	<name> Lukas Rygh </name>
+	<age>18</age>
+	<Schools>
+		<PrimarySchool>
+			<SchoolName>Clapham Manor</SchoolName>
+			<PersonalRating>Good</PersonalRating>
+		</PrimarySchool>
+		<SecondarySchool>
+			<SchoolName>Lambest Academy</SchoolName>
+			<PersonalRating>Awful</PersonalRating>
+		</SecondarySchool>
+		<SixthForm>
+			<SchoolName>KCL Maths School</SchoolName>
+			<PersonalRating>Decent</PersonalRating>
+		</SixthForm>
+	</Schools>
+
+</Lukas>
