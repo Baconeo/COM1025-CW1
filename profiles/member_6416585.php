@@ -8,7 +8,7 @@
         <title>Robert Bacon's Profile</title>
         <style type='text/css'>
             div {
-                width: 100%;
+                width: 99%;
                 height: 100%;
             }
             div #frontpage {
@@ -18,9 +18,12 @@
                 position: absolute;
                 top: 200%;
             }
-            div #projects {
-                position: absolute;
-                top: 300%;
+            div #footer {
+                clear: both;
+                position: relative;
+                z-index: 10;
+                height: 3em;
+                margin-top: -3em;
             }
             table {
                 color: black;
@@ -61,6 +64,14 @@
     <body>
         <div id='frontpage'>
             <h1 style="background-color:#B22222;text-align:center; position:relative;">Robert Bacon's Profile</h1>
+            <h4 style="background-color:#ff0000;text-align:center; position:relative;"><?php 
+            function displayTimeDate() {
+                $timeDate = date("d/m/Y h:i:sa");
+                echo "$timeDate";
+            }
+            
+            displayTimeDate();
+            ?></h4>
             <table style='margin: 0 auto;'>
                 <tr>
                     <th><h3>Content</h3></th>
@@ -125,6 +136,8 @@
                 </div>
             </div>
         </div>
+        <div id="footer">
+            <?php include('../common/footer.php') ?>                            
+        </div>
     </body>
-    <?php include('../common/footer.php') ?>
 </html>
