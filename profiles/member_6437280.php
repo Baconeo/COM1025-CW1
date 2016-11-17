@@ -75,12 +75,13 @@
         
         
         
-        <a href="#photos"><img src = "../images/member_6437280_3.jpg" class='profile' title="This photo is of me, taken by my brother, in the Ninh Binh province in Vietname"></a>
+        <a href="#photos"><img src = "../images/member_6437280_3.jpg" class='profile' title="This photo is of me, taken by my brother, in the Ninh Binh province in Vietnam"></a>
         
         <div class="grey">
-            <p>
-                Here is a list of things I like.
-            </p>
+            <?php 
+            $interestlist ="Here is a list of things I like.";
+            echo "<p>$interestlist</p>";        
+            ?>
 
             <?php
             $interests = array("Playing Drums", "Skiing", "Programming", "Taking Photos",
@@ -161,4 +162,5 @@
         <img src = "../images/member_6437280_7.jpg" class='pics' title="This is a photo taken at the top of the Cugnai Chairlift in Val-d'Isere, France.">
         
     </body>
+    <?php include('../common/footer.php') ?>
 </html>
