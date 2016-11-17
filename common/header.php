@@ -10,7 +10,12 @@
     
     ?>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>     
+    <!-- Loading local jQuery file and using location check function to determine path -->
+    <?php if (locationCheck()) : ?>
+    <script src="./jQuery/jquery-3.1.1.min.js"></script>     
+    <?php else : ?>
+    <script src="../jQuery/jquery-3.1.1.min.js"></script>
+    <?php endif; ?>
     
     <?php
     // Cookie Creation
@@ -50,12 +55,14 @@
                     <?php endif; ?>
                 </div>
             </div>
-            <?php
-            // Cookie not set on first visit so will throw an error when trying to print if not set
-            if (isset($_COOKIE["previousPages"])) {
-                print $_COOKIE["previousPages"];
-            } 
-            ?>
+            <div>
+                <?php
+                // Cookie not set on first visit so will throw an error when trying to print if not set
+                if (isset($_COOKIE["previousPages"])) {
+                    print $_COOKIE["previousPages"];
+                } 
+                ?>
+            </div>
         </div>
     </body>
 </html>

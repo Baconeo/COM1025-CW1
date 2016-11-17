@@ -93,6 +93,11 @@ div.prim-navigation a:hover {
   color: #ffffff;
   border-bottom: none;
 }
+a.topLink {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
 
 #white {
     color:white;

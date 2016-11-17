@@ -104,8 +104,7 @@
 			}
 			echo "</div>";
 		?>
-	</div>
-	
+	</div>	
 	<div id="education">
 	<h3 class = "headings">Education</h2>
 		<table id="exams">

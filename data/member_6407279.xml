@@ -1,4 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE personal [
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT grade (#PCDATA)>
+<!ELEMENT dogsname (#PCDATA)>
+<!ELEMENT hometown (#PCDATA)>
+<!ELEMENT bestcity (#PCDATA)>
+<!ELEMENT holiday (#PCDATA)>
+<!ELEMENT primary (#PCDATA)>
+<!ELEMENT secondary (#PCDATA)>
+<!ELEMENT college (#PCDATA)>
+<!ELEMENT university (#PCDATA)>
+<!ELEMENT informationtechnology (grade)>
+<!ELEMENT maths (grade)>
+<!ELEMENT economics (grade)>
+<!ELEMENT alevels (informationtechnology, maths, economics)>
+<!ELEMENT places (hometown, bestcity, holiday)>
+<!ELEMENT education (primary, secondary, college, university)>
+]>
+
 <personal xml:lang="en">
 	<name>Sam Rowe</name>
 	<age>18</age>
