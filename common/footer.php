@@ -1,5 +1,5 @@
 <head>
-	<style = text/css>
+	<style type = "text/css">
 		.footer{
 			text-align: center;
 			color: rgba(255, 255, 255, 0.7);
