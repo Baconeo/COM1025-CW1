@@ -4,6 +4,7 @@
 <!ELEMENT name (#PCDATA)>
 <!ELEMENT age (#PCDATA)>
 <!ELEMENT grade (#PCDATA)>
+<!ATTLIST grade type (A|B|C|D|E) #REQUIRED>
 <!ELEMENT dogsname (#PCDATA)>
 <!ELEMENT hometown (#PCDATA)>
 <!ELEMENT bestcity (#PCDATA)>
@@ -18,6 +19,7 @@
 <!ELEMENT alevels (informationtechnology, maths, economics)>
 <!ELEMENT places (hometown, bestcity, holiday)>
 <!ELEMENT education (primary, secondary, college, university)>
+<!ATTLIST personal xml:lang CDATA #REQUIRED>
 ]>
 
 <personal xml:lang="en">
