@@ -4,33 +4,34 @@
 
     <head>
         <title>Group 15</title>
-        <meta charset="UTF-8">
-		
-        <link type="text/css" rel="stylesheet" href="css/group.css">
-        <style type = "text/css">
-        ul{
-            margin: auto;
-            text-align: center;
-            padding: 100px
-        }
-        li {
-            display: inline-block;
-            width: 150px;
-            position: relative;
-        }
-        table {
-            border-collapse:collapse;
-        }
-        th {
-            background-color: #91EFA6;
-        }
-        .half{
-            top:100%;
-        }
-        .half2{
-            top:200%;
-        }                
-        </style>
+        <meta content="charset=UTF-8">
+		<link type="text/css" rel="stylesheet" href="css/group.css">
+		<style type = "text/css">
+		ul{
+			margin: auto;
+			text-align: center;
+			padding: 100px
+			}
+
+		li {
+			display: inline-block;
+			width: 150px;
+			position: relative;
+		}
+                table {
+                    border-collapse:collapse;
+                }
+                th {
+                    background-color: #91EFA6;
+                }
+                .half{
+                    top:100%;
+                }
+                .half2{
+                    top:100%;
+                }                
+		</style>
+
         
         <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'> 
         
@@ -175,7 +176,7 @@
 				<?php
 				if($_SERVER["REQUEST_METHOD"] == "POST"){
 					$comment = $REQUEST['commentarea'];
-					if(!empty($comment){
+					if(!empty($comment)){
 						echo "Your message is ". $comment;
 					}
 				}
