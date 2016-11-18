@@ -90,7 +90,7 @@
                     </li>
                     <li> 
                         <a href="profiles/member_6437280.php">
-                            <img alt="An image of Robbie" src = "images/Placeholder_person.jpg" class="pics">
+                            <img alt="An image of Robbie" src = "images/member_6437280.jpg" class="pics">
                             <div class="textoverlay"><p class="names" title="Robie Murray" >Robbie Murray</p></div>
                         </a>
                     </li>

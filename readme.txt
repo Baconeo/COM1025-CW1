@@ -35,6 +35,22 @@ member_6407279_photoone.jpg
 
 group.xml
 	The group XML file which holds some data about each member of the group
+	
+member_6407279.xml	
+	Member 6407279 (Sam Rowe's) XML file containing personal information about him.
+	
+member_6416585.xml	
+	Member 6416585 (Robert Bacon's) XML file containing personal information about him.
+	
+member_6426813.xml	
+	Member 6426813 (Callum Seymour's) XML file containing personal information about him.
+	
+member_6429748.xml	
+	Member 6429748 (Lukas Rygh) XML file containing personal information about him.
+	
+member_6437280.xml	
+	Member 6437280 (Sam Rowe's) XML file containing personal information about him.
+
 
 -CSS Folder
 
