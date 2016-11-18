@@ -40,6 +40,7 @@
             $(function() {
                 // Run when an 'a' tag is clicked 
                 $('a').click(function(){
+                    // jQuery function animate used to smoothly scroll
                     $('html, body').animate({
                         scrollTop: $( $(this).attr('href') ).offset().top
                     }, 800);
@@ -134,10 +135,9 @@
                         </ul>
                     </section>
                 </div>
+                <div style="height:5%"><?php include('../common/footer.php') ?></div>                       
             </div>
-        </div>
-        <div id="footer">
-            <?php include('../common/footer.php') ?>                            
+            
         </div>
     </body>
 </html>
