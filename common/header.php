@@ -1,46 +1,37 @@
-<head>
-    <?php 
-    
-    function locationCheck() {
-        $locationCheck = getcwd() . "\index.php";
-        $backtrace = debug_backtrace();
-                
-        return in_array($locationCheck, $backtrace[1]);
-    }
-    
-    ?>
-    
-    <!-- Loading local jQuery file and using location check function to determine path -->
-    <?php if (locationCheck()) : ?>
-    <script src="./jQuery/jquery-3.1.1.min.js"></script>     
-    <?php else : ?>
-    <script src="../jQuery/jquery-3.1.1.min.js"></script>
-    <?php endif; ?>
-    
-    <?php
-    // Cookie Creation
+<?php 
 
-    // Cookie to store previous pages visited  
-    $name = "previousPages";
-    // Backtrace where the current file is
+function locationCheck() {
+    $locationCheck = getcwd() . "\index.php";
     $backtrace = debug_backtrace();
-    $path = $backtrace[0]['file'];
-    // Reduce the string to everything after the last '\'
-    $value = substr($path, strrpos($path, "\\") + 1);
-    // Remove everything after the last '.' in the string
-    $value = strtok($value, '.');
-   
-    // Check if the cookie is set already, if it is we append to what is currently within
-    if (isset($_COOKIE[$name])) {
-        $value = $_COOKIE[$name] . " / " . $value;
-    }
+
+    return in_array($locationCheck, $backtrace[1]);
+}
+
+?>
+
+<?php
+// Cookie Creation
+
+// Cookie to store previous pages visited  
+$name = "previousPages";
+// Backtrace where the current file is
+$backtrace = debug_backtrace();
+$path = $backtrace[0]['file'];
+// Reduce the string to everything after the last '\'
+$value = substr($path, strrpos($path, "\\") + 1);
+// Remove everything after the last '.' in the string
+$value = strtok($value, '.');
+
+// Check if the cookie is set already, if it is we append to what is currently within
+if (isset($_COOKIE[$name])) {
+    $value = $_COOKIE[$name] . " / " . $value;
+}
+
+setcookie($name, $value, time() + (86400 * 30), '/');
+
+
+?>
     
-    setcookie($name, $value, time() + (86400 * 30), '/');
-    
-    
-    ?>
-    
-</head>
 <html>
     <body>
         <div>

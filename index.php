@@ -6,6 +6,7 @@
         <title>Group 15</title>
         <meta content="charset=UTF-8">
 		<link type="text/css" rel="stylesheet" href="css/group.css">
+                <script type="text/javascript" src="../jQuery/jquery-3.1.1.min.js"></script>
 		<style type = "text/css">
 		ul{
 			margin: auto;
