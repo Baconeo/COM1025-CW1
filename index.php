@@ -173,7 +173,7 @@
                     </table>
                     <?php 
                     function storeComment() {
-                        if (isset($_POST["name"])) {
+                        if (isset($_POST["name"]) && isset($_POST["content"])) {
                             $xmlLocation = "./data/comments.xml";
                             $xml = new SimpleXMLElement($xmlLocation, null, true);
 
@@ -194,6 +194,12 @@
                         <h3 style="text-align:center">Comments</h3>
                         <?php                         
                         $comments = simplexml_load_file("./data/comments.xml"); 
+                        if (isset($_POST["name"]) && isset($_POST["content"])) {
+                            $comment = $comments->addChild('comment');
+                            $comment->addChild('name', $_POST["name"]);
+                            $comment->addChild('content', $_POST["content"]);                     
+                        }
+
                         foreach($comments as $comment) {
                             echo "<p>$comment->name: $comment->content</p>";
                         }
