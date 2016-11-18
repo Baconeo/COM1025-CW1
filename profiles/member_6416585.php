@@ -1,7 +1,5 @@
 <!DOCTYPE HTML>
 <html lang="en">
-    <?php include('../common/header.php') ?>
-
     <head>
         <meta http-equiv="Content-type" content="text/html;charset=utf-8" />
         <link type="text/css" rel="stylesheet" href="../css/group.css"> 
@@ -65,6 +63,7 @@
     </head>
     
     <body>
+        <?php include('../common/header.php') ?>        
         <div id='frontpage'>
             <h1 style="background-color:#B22222;text-align:center; position:relative;">Robert Bacon's Profile</h1>
             <h4 style="background-color:#ff0000;text-align:center; position:relative;"><?php 
@@ -77,7 +76,7 @@
             ?></h4>
             <table style='margin: 0 auto;'>
                 <tr>
-                    <th><h3>Content</h3></th>
+                    <th>Content</th>
                 </tr>
                 <tr>
                     <td><a class="topLink" title="Hobbies that interest me" href="#hobbies">- Hobbies</a></td>
@@ -91,7 +90,7 @@
                     <h2>Hobbies</h2>
                     <table style='text-align:unset;'>
                         <tr>
-                            <th>Click a hobby to bring up information</th>
+                            <th colspan="2">Click a hobby to bring up information</th>
                         </tr>
                         <tr>
                             <td><a id="airsoftLink" class="topLink" title="A sport that is similar to paintball" href="#hobbies">Airsoft</a></td>
@@ -120,7 +119,7 @@
                         echo "$gamingTitle";
                         $xmlData = simplexml_load_file("../data/member_6416585.xml"); 
                         ?>
-                        <p><h4 style='padding-left:10px'><span style='color:grey; '>Desktop Specs:</span></h4></p>
+                        <h4 style='padding-left:10px'><span style='color:grey; '>Desktop Specs:</span></h4>
                         <ul>
                             <li>
                                 <?php echo $xmlData->component[0]->type; ?>:  <?php echo $xmlData->component[0]->name; ?>
