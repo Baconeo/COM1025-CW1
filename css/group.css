@@ -98,6 +98,15 @@ a.topLink {
     text-decoration: none;
     font-weight: bold;
 }
+.footer{
+        text-align: center;
+        color: rgba(255, 255, 255, 0.7);
+        background-color: #222222;
+        padding: 10px;
+        margin-top: 10px;
+        font-weight: bold;
+        border-top: 3px solid #7d1010;
+}
 
 #white {
     color:white;
