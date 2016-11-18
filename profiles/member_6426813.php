@@ -1,8 +1,7 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML>
 <html lang="en">
-<head> 
-		<?php include('../common/header.php') ?>
-        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<head>
+		<meta charset="UTF-8">
 		<link type="text/css" rel="stylesheet" href="../css/group.css"> 
 		<title>Callum's page</title>		
 		<style type = text/css>
@@ -15,7 +14,7 @@
 			position: relative;
 			border-style:solid;
 		}
-		div.pic{
+		#pic{
 			position: absolute;
 			top: 0;
 		    right: 0;
@@ -32,7 +31,7 @@
 			font-weight:bold;
 			color: #4686BC;
 		}
-		#family{
+		.family{
 			padding: 20px;
 		}
 		table {
@@ -54,9 +53,10 @@
 		</style>
     </head>
     <body>
+	<?php include('../common/header.php') ?>
 	<div class="top">
 		<h1>Callum's page</h1>
-		<div class="pic"><img src="../images/member_6426813_2.jpeg" title="me and Rosie (my dog)"></div>
+		<div id="pic"><img src="../images/member_6426813_2.jpeg" title="me and Rosie (my dog)" alt="me and my dog"></div>
 	<?php
 		//function displays time and date that user has accessed webpage at 
 		//used http://www.w3schools.com/php/php_date.asp as a guide 
@@ -87,18 +87,18 @@
 	<div id="xml">
 		<h3 class = "headings">Background information</h3>
 		<?php
-			$xml = simplexml_load_file("../data/member_6426813.xml");
+			$xml = simplexml_load_file("C:/xampp/htdocs/com1025_cw1/data/member_6426813.xml");
 			echo "name: ", $xml->name, "<br />";
 			echo "age: ", $xml->age, "<br />";
 			echo "birthday: ", $xml->birthday, "<br />";
 			echo "Immediate family: <br />";
-			echo "<div id='family'>";
+			echo "<div class='family'>";
 			foreach($xml->family->person as $person){
 					echo $person->name," - ",$person->relation, "<br />";
 			}
 			echo "</div>";
 			echo "Where I have lived: <br />";
-			echo "<div id='family'>";
+			echo "<div class='family'>";
 			foreach($xml->places_lived->place as $place){
 					echo $place->location," - ",$place->time_lived, "<br />";
 			}
@@ -106,9 +106,9 @@
 		?>
 	</div>	
 	<div id="education">
-	<h3 class = "headings">Education</h2>
+	<h3 class = "headings">Education</h3>
 		<table id="exams">
-			<tr>
+			<tr style="color: #286BA3;">
 				<th>Exam level</th>
 				<th>Subject</th>
 				<th>Date</th>
@@ -176,7 +176,7 @@
 	</div>
 	
 	<div id="dates">
-		<h3 class = "headings">Key dates</h2>
+		<h3 class = "headings">Key dates</h3>
 		<?php
 			$dates = array(array("date" => "1998", "event" => "was born"), 
 						   array("date" => "2002", "event" => "started primary school at Heathbrook Primary School"),
@@ -204,5 +204,6 @@
 			<li>Reading</li>
 		</ul>
 	</div>
+	<?php include('../common/footer.php') ?>
     </body>
 </html>

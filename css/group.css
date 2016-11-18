@@ -112,6 +112,11 @@ a.topLink {
     color:white;
 }
 
+.tableformatting{
+	border-spacing: 1px;
+	border:1px;
+}
+
 /* Colour Pallet
     
         Lightest at the top

@@ -6,6 +6,7 @@
         <title> Robbie's Awesome Page duh </title>
         <meta charset="UTF-8">
         <link type="text/css" rel="stylesheet" href="../css/group.css">
+        <script type="text/javascript" src="../jQuery/jquery-3.1.1.min.js"></script>
         <style type="text/css">
             h1.main{
                 text-align: center;
@@ -63,7 +64,6 @@
         </style>
         <script>
             $(function() {
-                // Run when an 'a' tag is clicked 
                 $('a').click(function(){
                     $('html, body').animate({
                         scrollTop: $( $(this).attr('href') ).offset().top

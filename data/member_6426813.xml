@@ -1,39 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE info[
+<!ELEMENT info (name,age,birthday,family,places_lived)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT birthday (#PCDATA)>
+<!ELEMENT family (person)>
+<!ELEMENT person (person_name,relation)>
+<!ELEMENT person_name (#PCDATA)>
+<!ELEMENT relation (#PCDATA)>
+<!ELEMENT places_lived (place)>
+<!ELEMENT place (location,time_lived)>
+<!ELEMENT location (#PCDATA)>
+<!ELEMENT time_lived (#PCDATA)>
+}>
 <info>
 	<name>Callum Seymour</name>
 	<age>18</age>
 	<birthday>18-07-1998</birthday>
 	<family>
 		<person>
-			<name>Petra Seymour</name>
+			<person_name>Petra Seymour</person_name>
 			<relation>Mother</relation>
 		</person>
 		<person>
-			<name>Neil Seymour</name>
+			<person_name>Neil Seymour</person_name>
 			<relation>Father</relation>
 		</person>
 		<person>
-			<name>Kieran Seymour</name>
+			<person_name>Kieran Seymour</person_name>
 			<relation>Brother</relation>
 		</person>
 		<person>
-			<name>Rosie</name>
+			<person_name>Rosie</person_name>
 			<relation>Dog</relation>	
 		</person>
 		<person>
-			<name>Tony Delgado</name>
+			<person_name>Tony Delgado</person_name>
 			<relation>Grandad</relation>
 		</person>
 		<person>
-			<name>David Seymour</name>
+			<person_name>David Seymour</person_name>
 			<relation>Grandad</relation>
 		</person>
 		<person>
-			<name>Elaine Bools</name>
+			<person_name>Elaine Bools</person_name>
 			<relation>Grandmother</relation>
 		</person>
 		<person>
-			<name>Maggie Desa</name>
+			<person_name>Maggie Desa</person_name>
 			<relation>Grandmother</relation>	
 		</person>
 	</family>

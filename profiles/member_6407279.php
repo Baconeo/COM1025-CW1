@@ -1,6 +1,5 @@
 <!DOCTYPE HTML>
 <html lang="en">
-	<?php include('../common/header.php') ?>
 	<head>
 		<title>Sam's Personal Page</title>
 		<meta charset="UTF-8">
@@ -38,6 +37,7 @@
 		</style>
 	</head>
 	<body>
+		<?php include('../common/header.php') ?>
 		<div class="top">
 			<h1 class="main"> Sam's Personal Page </h1><hr>
 		</div>
@@ -81,7 +81,7 @@
 			echo "<h3>$title</h3>";
 		?>
 		<p>Although these are my main interests, I do enjoy doing things outside of the activities listed above such as walking my dog and cooking. However, I find that the hobbies and interests that I have listed above to be the things which I enjoy the most and have the <span class="excited">best time</span> while I am doing them. I have had many different influences which have led me to have to have such a diverse range of interests. These range from other family members interests to enjoyment of American culture. Below, I have again listed out my different hobbies and where I first became interested with them.</p>
-		<table border="1" cellspacing="2" cellpadding="2">
+		<table class="tableformatting">
 			<caption>A table listing my interests and their influences</caption>
 			<thead>
 				<tr>
@@ -133,26 +133,26 @@
 			<li><?php echo $personalxml->name; ?></li>
 			<li><?php echo $personalxml->age; ?></li>
 			<li>A level grades</li>
-			<ul>
+			
 				<li>IT: <?php echo $personalxml->alevels->informationtechnology->grade; ?></li>
 				<li>Maths: <?php echo $personalxml->alevels->maths->grade; ?></li>
 				<li>Economics: <?php echo $personalxml->alevels->economics->grade; ?></li>
-			</ul>
+			
 			<li>My dog's name is <?php echo $personalxml->dogsname; ?></li>
 			<li>My favourite places are:</li>
-			<ul>
+			
 				<li><?php echo $personalxml->places->hometown; ?></li>
 				<li><?php echo $personalxml->places->bestcity; ?></li>
 				<li>My best holidays are <?php echo $personalxml->places->holiday; ?></li>
-			</ul>
+			
 			<li>I have been educated at:</li>
-			<ul>
+			
 				<li>Primary: <?php echo $personalxml->education->primary; ?></li>
 				<li>Secondary: <?php echo $personalxml->education->secondary; ?></li>
 				<li>College: <?php echo $personalxml->education->college; ?></li>
 				<li>University: <?php echo $personalxml->education->university; ?></li>
-			</ul>
+			
 		</ul>	
+			<?php include('../common/footer.php') ?>
 	</body>
-	<?php include('../common/footer.php') ?>
 </html>
