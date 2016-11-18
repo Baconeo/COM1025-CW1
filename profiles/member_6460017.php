@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
     <style>
         body{
@@ -116,7 +116,11 @@
     </style>
 
     <head>
+        <title> Thushanthy Thillainathan's Page </title>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+        <link type="text/css" rel="stylesheet" href="../css/group.css">
     </head>
+<p> </p>
     <body>
 
 
@@ -124,7 +128,7 @@
             <header>
                 <div class ="navbar">
                     <ul>
-                        <li><a class="active" href="#home">Home</a></li>
+                        <li><a class="active" href="com1025_cw1\index.html">Home</a></li>
                         <li><a class="active" href="#aboutme">About Me</a></li>
                         <li><a class="active" href="#contact">Contact Me</a></li>
                     </ul>
