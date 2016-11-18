@@ -100,10 +100,11 @@ member_6429748.xml
 member_6437280.xml	
 	Member 6437280 (Robbie Murray's) XML file containing information about his grades.
 	
-member_6437280.xml	
-	Member 6437280 (Robbie Murray's) XML file containing information about his grades.
+comments.xml	
+	Holds comments which are inputted by users
 	
-
+member_6460017.xml	
+	Member 6460017 (Thushanthy Thillainathan's) XML file containing a letter structure
 
 -CSS Folder
 
