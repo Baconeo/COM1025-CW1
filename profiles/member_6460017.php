@@ -120,7 +120,7 @@
         <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
         <link type="text/css" rel="stylesheet" href="../css/group.css">
     </head>
-<p> </p>
+    <p> </p>
     <body>
 
 
@@ -135,38 +135,23 @@
                 </div>
                 <h1> Thushanthy Thillainathan</h1>
             </header>
-            <br></br>
-            <br></br>
-            <br></br><br></br>
-            <br></br>
-            <br></br>
-            <br></br><br></br><br></br>
-            <?xml version ="1.0" encoding ="UTF-8"?>
+            <br>
+            <br>
+            <br><br>
+            <br>
+            <br>
+            <br><br><br>
 
-            <!DOCTYPE note
-                [<!ELEMENT note (to, from,body)>
-            <!ELEMENT to (#PCDATA)>
-            <!ELEMENT from (#PCDATA)>
-            <!ELEMENT body (#PCDATA)>
-
-            ]>
-            <note>
-                <to> User</to>
-                <from> Thushanthy</from>
-                <body>Welcome To My Page</body>
-            </note>
-
-
-            <br></br><br></br>
-            <br></br>
-            <br></br>
-            <br></br><br></br>
-            <br></br>
-            <br></br>
-            <br></br><br></br>
-            <br></br>
-            <br></br>
-            <br></br><br></br>
+            <br><br>
+            <br>
+            <br>
+            <br><br>
+            <br>
+            <br>
+            <br><br>
+            <br>
+            <br>
+            <br><br>
 
             <div class ="homediv">
                 <img src="H:\Thushanthy\COM1025\own page\images\2.jpg" position="center", attachment="fixed" width="100%";>
@@ -179,12 +164,12 @@
                 <h1> About me</h1>
             </header>
             <div class="text1">
-                <br></br>
+                <br>
 
-                <br></br>
-                <br></br>
+                <br>
+                <br>
 
-                <p><span style= "text-color:black; font-size:25px;" > <b>Hello!!! I am Thushanthy Thillainathan. <br></br>I am studying computing and information technology. I am from Sri Lanka and I have been living in here for four years. I was in Wembley high technology and studied my GSCE in there. After I continued my education in harrow college and did my further education in there.Finally I am here now.</b><br></br></span></p>
+                <p><span style= "text-color:black; font-size:25px;" > <b>Hello!!! I am Thushanthy Thillainathan. <br>I am studying computing and information technology. I am from Sri Lanka and I have been living in here for four years. I was in Wembley high technology and studied my GSCE in there. After I continued my education in harrow college and did my further education in there.Finally I am here now.</b><br></span></p>
 
                 <p><span style= "text-color:black; font-size:25px;" ><b>I love Photography alot. I love taking pictures of intersting things, or new things and the landscape as well. Even the random pictures that you take make you to remember something. <i>I don't shoot what it looks like I shoot what it feels like</i> </b></span> </p>
             </div>
@@ -206,7 +191,7 @@
 
                     <p> <span style= "text-color:black; font-size:25px;" ><b> Want To Know More About Me??? <br> Contact Me </b> <p></span>
 
-                        <br></br>
+                        <br>
 
 
                     <div style="position:relative;" class="form">
@@ -224,8 +209,8 @@
                     </div>	
 
                     <div class="details">
-                        <p> My Details<br></br>
-                            name<br></br>Address<br></br></p>
+                        <p> My Details<br>
+                            name<br>Address<br></p>
                         <?php
                         $aboutme = array(array("Thank", "You"));
                         echo"Dear user" . $aboutme[0] . "," . $aboutme[1];

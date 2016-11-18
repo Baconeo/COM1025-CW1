@@ -1,0 +1,14 @@
+<?xml version ="1.0" encoding ="UTF-8"?>
+
+<!DOCTYPE note
+    [<!ELEMENT note (to, from,body)>
+<!ELEMENT to (#PCDATA)>
+<!ELEMENT from (#PCDATA)>
+<!ELEMENT body (#PCDATA)>
+
+]>
+<note>
+    <to> User</to>
+    <from> Thushanthy</from>
+    <body>Welcome To My Page</body>
+</note>
