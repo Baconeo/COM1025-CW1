@@ -18,13 +18,6 @@
                 position: absolute;
                 top: 200%;
             }
-            div #footer {
-                clear: both;
-                position: relative;
-                z-index: 10;
-                height: 3em;
-                margin-top: -3em;
-            }
             table {
                 color: black;
                 border: 3px solid #ccc;
@@ -138,7 +131,6 @@
                 </div>
                 <div style="height:5%"><?php include('../common/footer.php') ?></div>                       
             </div>
-            
         </div>
     </body>
 </html>
