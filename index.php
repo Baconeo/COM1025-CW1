@@ -6,6 +6,7 @@
         <title>Group 15</title>
         <meta content="charset=UTF-8">
 		<link type="text/css" rel="stylesheet" href="css/group.css">
+                <script type="text/javascript" src="../jQuery/jquery-3.1.1.min.js"></script>
 		<style type = "text/css">
 		ul{
 			margin: auto;
@@ -165,7 +166,7 @@
                             <label>Subject:</label><br />
                             <input type="text"><br />
                             <label>Comment:</label><br />
-                            <textarea form="mailtoform" name="commentarea"></textarea><br /> <br />   
+                            <textarea form="mailtoform"></textarea><br /> <br />   
                             <button onClick ="thankAlert()">Submit Comment</button>
                         </form>
                     </div>	
@@ -173,14 +174,6 @@
                         <p>Form Submitted!</p>
                     </div>
                 </div>
-				<?php
-				if($_SERVER["REQUEST_METHOD"] == "POST"){
-					$comment = $REQUEST['commentarea'];
-					if(!empty($comment)){
-						echo "Your message is ". $comment;
-					}
-				}
-				?>
             </footer>
             </section>
         </div>

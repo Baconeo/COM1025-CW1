@@ -4,7 +4,9 @@
 
     <head>
         <meta http-equiv="Content-type" content="text/html;charset=utf-8" />
-        <link type="text/css" rel="stylesheet" href="../css/group.css">   
+        <link type="text/css" rel="stylesheet" href="../css/group.css"> 
+        <script type="text/javascript" src="../jQuery/jquery-3.1.1.min.js"></script>
+        
         <title>Robert Bacon's Profile</title>
         <style type='text/css'>
             div {
@@ -40,6 +42,7 @@
             $(function() {
                 // Run when an 'a' tag is clicked 
                 $('a').click(function(){
+                    // jQuery function animate used to smoothly scroll
                     $('html, body').animate({
                         scrollTop: $( $(this).attr('href') ).offset().top
                     }, 800);
@@ -134,10 +137,9 @@
                         </ul>
                     </section>
                 </div>
+                <div style="height:5%"><?php include('../common/footer.php') ?></div>                       
             </div>
-        </div>
-        <div id="footer">
-            <?php include('../common/footer.php') ?>                            
+            
         </div>
     </body>
 </html>
