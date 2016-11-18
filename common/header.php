@@ -32,28 +32,24 @@ setcookie($name, $value, time() + (86400 * 30), '/');
 
 ?>
     
-<html>
-    <body>
+<div>
+    <div class="prim-navigation">
         <div>
-            <div class="prim-navigation">
-                <div>
-                    <?php if (locationCheck()) : ?>
-                    <div><a href="./index.php">Home</a></div>
-                    <div><a href="./index.php#half2">Contact Us</a></div>
-                    <?php else : ?>
-                    <div><a href="../index.php">Home</a></div>
-                    <div><a href="../index.php#half2">Contact Us</a></div>                    
-                    <?php endif; ?>
-                </div>
-            </div>
-            <div>
-                <?php
-                // Cookie not set on first visit so will throw an error when trying to print if not set
-                if (isset($_COOKIE["previousPages"])) {
-                    print $_COOKIE["previousPages"];
-                } 
-                ?>
-            </div>
+            <?php if (locationCheck()) : ?>
+            <div><a href="./index.php">Home</a></div>
+            <div><a href="./index.php#half2">Contact Us</a></div>
+            <?php else : ?>
+            <div><a href="../index.php">Home</a></div>
+            <div><a href="../index.php#half2">Contact Us</a></div>                    
+            <?php endif; ?>
         </div>
-    </body>
-</html>
+    </div>
+    <div>
+        <?php
+        // Cookie not set on first visit so will throw an error when trying to print if not set
+        if (isset($_COOKIE["previousPages"])) {
+            print $_COOKIE["previousPages"];
+        } 
+        ?>
+    </div>
+</div>
