@@ -35,26 +35,52 @@
 			<li>Video Games</li>
 			<li>Anime(Mecha, mostly)</li>
 			
-			<h4>A level subjects and Grades</h4>
+			<h4>Schools and opinions</h4>
+
+		<?php 
+		$XML = simpleXML_load_file("../data/member_6429748.xml");
+		?>
 			
 		<table border = 2>
 			<tr>
-				<td> A level subject</td>
-				<td> A level grade</td>
+				<td> School Name</td>
+				<td> Personal Opinion</td>
 			</tr>
 			<tr>
-				<td>Maths</td>
-				<td>A</td>
+				<td><?php echo $XML->Schools->PrimarySchool->SchoolName;?></td>
+				<td><?php echo $XML->Schools->PrimarySchool->PersonalRating;?></td>
 			</tr>
 			<tr>
-				<td>Further Maths</td>
-				<td>B</td>
+				<td><?php echo $XML->Schools->SecondarySchool->SchoolName;?></td>
+				<td><?php echo $XML->Schools->SecondarySchool->PersonalRating;?></td>
 			</tr>
 			<tr>
-				<td>Computer Science</td>
-				<td>B</td>
+				<td><?php echo $XML->Schools->SixthForm->SchoolName;?></td>
+				<td><?php echo $XML->Schools->SixthForm->PersonalRating;?></td>
 			</tr>
 		</table>
 		<a href = "#top">Back to top</a>
+		<br>
+		<a href = "#bottom">If you want to skip the following stuff, click this link.</a>
+		<br>
+		<?php
+		function countToTen() {
+			$Number = 1;
+			echo "This function will count from " . $Number . " to 100.";
+			while ($Number <= 1000) {
+				echo "<br>";
+				echo $Number;
+				$Number++;
+			}
+			echo "<br>";
+		}			
+		countToTen();
+		
+		
+		?>
+		
+		<a id="bottom" href = "#top">Back to top</a>
+
 	</body>
+	<?php include('../common/footer.php') ?>
 </html>
