@@ -109,7 +109,7 @@
                     </li>
                     <li> 
                         <a href="profiles/member_6429748.php">
-                            <img alt="An image of Lukas" src = "images/Placeholder_person.jpg" class="pics">
+                            <img alt="An image of Lukas" src = "images/member_6429748.jpg" class="pics">
                             <div class="textoverlay"><p class="names" title="Lukas Rygh" >Lukas Rygh</p></div>
                         </a>
                     </li>
