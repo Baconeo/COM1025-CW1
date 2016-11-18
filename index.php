@@ -174,6 +174,14 @@
                         <p>Form Submitted!</p>
                     </div>
                 </div>
+				<?php
+				if($_SERVER["REQUEST_METHOD"] == "POST"){
+					$comment = $REQUEST['commentarea'];
+					if(!empty($comment)){
+						echo "Your message is ". $comment;
+					}
+				}
+				?>
             </footer>
             </section>
         </div>
