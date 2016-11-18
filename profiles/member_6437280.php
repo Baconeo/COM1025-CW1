@@ -61,12 +61,29 @@
             }
             
         </style>
+        <script>
+            $(function() {
+                // Run when an 'a' tag is clicked 
+                $('a').click(function(){
+                    $('html, body').animate({
+                        scrollTop: $( $(this).attr('href') ).offset().top
+                    }, 800);
+                });
+            });
+        </script>
     </head>
     <body>
         <span>
             <h1 style="background-color:#FFC474" class="main">
                 Robbie's Pagiest Page
             </h1>
+            <?php
+            function todaysdate(){
+                $today = date("l jS \of F Y");
+                echo "<div style='text-align:right'>$today</div>";
+            }
+            todaysdate();
+            ?>
         </span>
         
         <p> 
