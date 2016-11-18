@@ -177,16 +177,16 @@
                             $xmlLocation = "./data/comments.xml";
                             $xml = new SimpleXMLElement($xmlLocation, null, true);
 
-                            $book = $xml->addChild('comment');
-                            $book->addChild('name', $_POST["name"]);
-                            $book->addChild('content', $_POST["content"]);
+                            $comment = $xml->addChild('comment');
+                            $comment->addChild('name', $_POST["name"]);
+                            $comment->addChild('content', $_POST["content"]);
                             
-                            $domxml = new DOMDocument('1.0');
-                            $domxml->preserveWhiteSpace = false;
-                            $domxml->formatOutput = true;
-                            $domxml->loadXML($xml->asXML());
+                            $domXML = new DOMDocument('1.0');
+                            $domXML->preserveWhiteSpace = false;
+                            $domXML->formatOutput = true;
+                            $domXML->loadXML($xml->asXML());
                             
-                            $domxml->save($xmlLocation);
+                            $domXML->save($xmlLocation);
                         }
                     }
                     ?>
