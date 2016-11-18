@@ -33,6 +33,9 @@ member_6407279_photoone.jpg
 
 -Data Folder
 
+group.xml
+	The group XML file which holds some data about each member of the group
+
 -CSS Folder
 
 group.css

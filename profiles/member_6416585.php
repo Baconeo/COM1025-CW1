@@ -1,34 +1,64 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML>
 <html lang="en">
     <?php include('../common/header.php') ?>
 
     <head>
         <meta http-equiv="Content-type" content="text/html;charset=utf-8" />
-        <link type="text/css" rel="stylesheet" href="../css/group.css">   
+        <link type="text/css" rel="stylesheet" href="../css/group.css"> 
+        <script type="text/javascript" src="../jQuery/jquery-3.1.1.min.js"></script>
+        
         <title>Robert Bacon's Profile</title>
         <style type='text/css'>
             div {
-                position:absolute;
-                width:100%;
-                height:100%;
+                width: 99%;
+                height: 100%;
             }
             div #frontpage {
                 top: 100%
             }
             div  #hobbies {
+                position: absolute;
                 top: 200%;
             }
-            div #projects {
-                top: 300%;
+            div #footer {
+                clear: both;
+                position: relative;
+                z-index: 10;
+                height: 3em;
+                margin-top: -3em;
+            }
+            table {
+                color: black;
+                border: 3px solid #ccc;
+                border-radius: 4px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                width: 20%;
+                margin : 0 auto;
+                text-align: center;
             }
         </style>
         <script>
             $(function() {
                 // Run when an 'a' tag is clicked 
                 $('a').click(function(){
+                    // jQuery function animate used to smoothly scroll
                     $('html, body').animate({
                         scrollTop: $( $(this).attr('href') ).offset().top
                     }, 800);
+                });
+                
+                // Show Airsoft section by default
+                $("#pcgaming").hide();
+                $("#airsoft").show();                
+                
+                $('#airsoftLink').click(function() {
+                    $("#airsoft").show();
+                    $("#pcgaming").hide();
+                });
+                $('#pcgamingLink').click(function() {
+                    $("#airsoft").hide();
+                    $("#pcgaming").show();
                 });
             });
         </script>
@@ -36,31 +66,80 @@
     
     <body>
         <div id='frontpage'>
-        <div>
-            <h1 style="text-align:center; position:relative; padding-top:70px;">Robert Bacon's Profile</h1>
-            <img src = "../images/member_6416585.jpg" class="pics">
-            <table>
+            <h1 style="background-color:#B22222;text-align:center; position:relative;">Robert Bacon's Profile</h1>
+            <h4 style="background-color:#ff0000;text-align:center; position:relative;"><?php 
+            function displayTimeDate() {
+                $timeDate = date("d/m/Y h:i:sa");
+                echo "$timeDate";
+            }
+            
+            displayTimeDate();
+            ?></h4>
+            <table style='margin: 0 auto;'>
                 <tr>
-                    <th>Content</th>
+                    <th><h3>Content</h3></th>
                 </tr>
                 <tr>
-                    <td><a title="Hobbies that interest me" href="#hobbies">Hobbies</a></td>
-                    <td><a title="Previous projects I have been involved with"href="#projects">Previous Projects</a></td>
+                    <td><a class="topLink" title="Hobbies that interest me" href="#hobbies">- Hobbies</a></td>
                 </tr>
             </table>
-        </div>
-        <div id='hobbies'>
-            <div>
-                <p>Test</p>
-            </div>
-        </div>
+            <br>
+            <img style='margin: 0 auto;display:block;width:250px;height:250px;' alt="Robert Bacon's face" src = "../images/member_6416585.jpg">
 
-        <div id='projects'>
-            <div>
-                <p>Test</p>
+            <div id='hobbies'>
+                <div>
+                    <h2>Hobbies</h2>
+                    <table style='text-align:unset;'>
+                        <tr>
+                            <th>Click a hobby to bring up information</th>
+                        </tr>
+                        <tr>
+                            <td><a id="airsoftLink" class="topLink" title="A sport that is similar to paintball" href="#hobbies">Airsoft</a></td>
+                            <td><a id="pcgamingLink" class="topLink" title="Games that I play on the PC" href="#hobbies">PC Gaming</a></td>
+                        </tr>
+                    </table>
+                    <section id="airsoft">
+                        <h3><span style='color:grey; '>Airsoft</span></h3>
+                        <p>Airsoft is a game similar to paintball. Instead of shooting small balls of paint that explode on impact, airsoft uses small plastic 6mm bbs</p>
+                        <!-- Source for image - https://www.quora.com/What-are-the-differences-between-paintball-and-airsoft -->
+                        <img alt="Paintball vs BB" src='../images/member_6416565_1.jpg'>
+                        <h4>My kit:</h4>
+                        <ul>
+                            <?php
+                            $airsoftKit = ["Head" => "Helmet", "Body" => "Plate Carrier", "Belt" => "Belt Rig", "Clothing" => "Camo Clothing", "Primary" => "Rifle", "Secondary" => "Pistol"];
+                            foreach ($airsoftKit as $airsoftItem) : ?>
+                            <li>
+                                <?= $airsoftItem;  ?>
+                            </li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </section>
+                    <section id="pcgaming">
+                        <?php
+                        $gamingTitle = "<h3>PC Gaming</h3>";
+                        echo "$gamingTitle";
+                        $xmlData = simplexml_load_file("../data/member_6416585.xml"); 
+                        ?>
+                        <p><h4 style='padding-left:10px'><span style='color:grey; '>Desktop Specs:</span></h4></p>
+                        <ul>
+                            <li>
+                                <?php echo $xmlData->component[0]->type; ?>:  <?php echo $xmlData->component[0]->name; ?>
+                            </li>
+                            <li>
+                                <?php echo $xmlData->component[1]->type; ?>:  <?php echo $xmlData->component[1]->name; ?>
+                            </li>
+                            <li>
+                                <?php echo $xmlData->component[2]->type; ?>:  <?php echo $xmlData->component[2]->name; ?>
+                            </li>
+                            <li>
+                                <?php echo $xmlData->component[3]->type; ?>:  <?php echo $xmlData->component[3]->name; ?> Â¦ <?php echo $xmlData->component[4]->name;?>
+                            </li>                            
+                        </ul>
+                    </section>
+                </div>
+                <div style="height:5%"><?php include('../common/footer.php') ?></div>                       
             </div>
-        </div>
+            
         </div>
     </body>
-    <?php include('../common/footer.php') ?>
 </html>
