@@ -8,16 +8,16 @@
             <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'> 
                 
             <style type = "text/css">
-		ul{
-			margin: auto;
-			text-align: center;
-			padding: 100px
-			}
+		ul {
+                    margin: auto;
+                    text-align: center;
+                    padding: 100px
+		}
 
 		li {
-			display: inline-block;
-			width: 150px;
-			position: relative;
+                    display: inline-block;
+                    width: 150px;
+                    position: relative;
 		}
                 table {
                     border-collapse:collapse;
@@ -35,7 +35,20 @@
                 }
                 .half2{
                     top:100%;
-                }                
+                }         
+                #comments {
+                    color: black;
+                    border: 3px solid #ccc;
+                    border-radius: 4px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    width: 500px;
+                    height: 300px;
+                    display: block;
+                    margin : 0 auto;
+                    text-align: left;
+                    float: right;
+                }
 	</style>        
         <script type="text/javascript">
             $(function() {
@@ -158,15 +171,41 @@
                                 <td><?php echo $xml->student[5]->coursetitle; ?></td>
                         </tr>
                     </table>
+                    <?php 
+                    function storeComment() {
+                        if (isset($_POST["name"])) {
+                            $xmlLocation = "./data/comments.xml";
+                            $xml = new SimpleXMLElement($xmlLocation, null, true);
+
+                            $book = $xml->addChild('comment');
+                            $book->addChild('name', $_POST["name"]);
+                            $book->addChild('content', $_POST["content"]);
+                            
+                            $domxml = new DOMDocument('1.0');
+                            $domxml->preserveWhiteSpace = false;
+                            $domxml->formatOutput = true;
+                            $domxml->loadXML($xml->asXML());
+                            
+                            $domxml->save($xmlLocation);
+                        }
+                    }
+                    ?>
+                    <div id="comments">
+                        <h3 style="text-align:center">Comments</h3>
+                        <?php                         
+                        $comments = simplexml_load_file("./data/comments.xml"); 
+                        foreach($comments as $comment) {
+                            echo "<p>$comment->name: $comment->content</p>";
+                        }
+                        ?>
+                    </div>
                     <div style="position:relative;" id="contactForm" class="contactForm">
-                        <form action="mailto:sr00584@surrey.ac.uk,rm00727@surrey.ac.uk,lr00341@surrey.ac.uk,cs00916@surrey.ac.uk,rb00573@surrey.ac.uk,tt00308@surrey.ac.uk" id="mailtoform" method="POST">
-                            <label>Your Email:</label><br />
-                            <input type="email"><br />
-                            <label>Subject:</label><br />
-                            <input type="text"><br />
-                            <label>Comment:</label><br />
-                            <textarea form="mailtoform"></textarea><br /> <br />   
-                            <button onClick ="thankAlert()">Submit Comment</button>
+                        <form action="index.php" id="commentForm" method="POST">
+                            <label>Your Name:</label><br>
+                            <input name="name" type="name"><br>
+                            <label>Comment:</label><br>
+                            <textarea name="content" form="commentForm"></textarea><br> <br>   
+                            <button onClick ="<?php storeComment(); ?>">Submit Comment</button>
                         </form>
                     </div>	
                     <div style="display:none" id="contactFormSubmitted" class="contactForm">

@@ -94,7 +94,7 @@
                         <h3><span style='color:grey; '>Airsoft</span></h3>
                         <p>Airsoft is a game similar to paintball. Instead of shooting small balls of paint that explode on impact, airsoft uses small plastic 6mm bbs</p>
                         <!-- Source for image - https://www.quora.com/What-are-the-differences-between-paintball-and-airsoft -->
-                        <img alt="Paintball vs BB" src='../images/member_6416565_1.jpg'>
+                        <img alt="Paintball vs BB" src='../images/member_6416585_1.jpg'>
                         <h4>My kit:</h4>
                         <ul>
                             <?php

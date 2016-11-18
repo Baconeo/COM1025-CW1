@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE comments [
+<!ELEMENT comment (name | content)*>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT content (#PCDATA)>
+<!ELEMENT comments (comment)>
+<!ATTLIST comments xml:lang CDATA #REQUIRED>
+]>
+<comments xml:lang="en">
+  <comment>
+    <name>Robert</name>
+    <content>Test</content>
+  </comment>
+</comments>
