@@ -117,10 +117,10 @@
                         ?>
                         <caption>Members of Group 15 Details</caption>
                         <tr>
-                                <th class="white">Name</th>
-                                <th class="white">Email</th>
-                                <th class="white">URN</th>
-                                <th class="white">Course</th>
+                                <th id="white">Name</th>
+                                <th id="white">Email</th>
+                                <th id="white">URN</th>
+                                <th id="white">Course</th>
                         </tr>
                         <tr>
                                 <td><?php echo $xml->student[0]->name; ?></td>
