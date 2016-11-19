@@ -58,12 +58,16 @@
                 <header>
                     <h1 style="text-align:center">Group 15's Page!</h1>
                     <h2>Welcome To Our Group Page</h2>
-                                    <h3>Page Navigation:</h3>
-                                    <h5><a href="#table" class="topLink">-Member Information Table</a></h5>
-                                    <h3>Introduction</h3>
+                    <audio controls>
+                        <source src="audio/group15.wav" type="audio/wav">
+                    </audio>   
+                    <h3>Page Navigation:</h3>
+                    <h5><a href="#table" class="topLink">-Member Information Table</a></h5>
+                    <h3>Introduction</h3>
                     <p>This is group 15's main page! To access any of our members individual pages please click on their image below. This site will contain information about our members and their hobbie and interests. Their work email is also listed on this page should you wish to contact them. Enjoy!</p>
                 </header>
                 <h3 title="Click the image of the member to access their page">Our Members:</h3>
+
                 <ul>
                     <li>
                         <a href="profiles/member_6426813.php">
@@ -158,7 +162,38 @@
                                 <td><?php echo $xml->student[5]->URN; ?></td>
                                 <td><?php echo $xml->student[5]->coursetitle; ?></td>
                         </tr>
+                        <tr>
+                            <td colspan="4"><p id="bestmember"></p></td>
+                        </tr>
                     </table>
+                    <script>
+                    var i = Math.floor(Math.random() * 6);
+                    var name = null;
+                    switch(i) {
+                        case 0:
+                            name = 'Callum';
+                            break;
+                        case 1:
+                            name = 'Sam';
+                            break;
+                        case 2:
+                            name = 'Robert';
+                            break;
+                        case 3:
+                            name = 'Thushanthy';
+                            break;
+                        case 4:
+                            name = 'Robbie';
+                            break;
+                        case 5:
+                            name = 'Lukas';
+                            break;
+                        default:
+                            name = 'Nobody';
+                    }
+                    document.getElementById("bestmember").innerHTML = name + ' is the best student.';
+                    </script>
+                    
                     <?php 
                     function storeComment() {
                         if (isset($_POST["name"]) && isset($_POST["content"])) {

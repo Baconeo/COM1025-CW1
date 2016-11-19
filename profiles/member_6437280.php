@@ -1,7 +1,5 @@
 <!DOCTYPE HTML>
 <html lang="en">
-    <?php include('../common/header.php') ?>
-
     <head>
         <title> Robbie's Awesome Page duh </title>
         <meta charset="UTF-8">
@@ -73,18 +71,18 @@
         </script>
     </head>
     <body>
-        <span>
-            <h1 style="background-color:#FFC474" class="main">
-                Robbie's Pagiest Page
-            </h1>
-            <?php
-            function todaysdate(){
-                $today = date("l jS \of F Y");
-                echo "<div style='text-align:right'>$today</div>";
-            }
-            todaysdate();
-            ?>
-        </span>
+        <?php include('../common/header.php') ?>
+        
+        <h1 style="background-color:#FFC474" class="main">
+            Robbie's <span style="font-style: italic">Pagiest</span> Page
+        </h1>
+        <?php
+        function todaysdate(){
+            $today = date("l jS \of F Y");
+            echo "<div style='text-align:right'>$today</div>";
+        }
+        todaysdate();
+        ?>
         
         <p> 
             Hi. My name is Robbie Murray and I am currently studying computer science at the University of Surrey, located in Guildford. I studied Maths, Physics and Computing for A levels; I also took a year out and chose to study music instead of the typic travel around.
@@ -92,7 +90,7 @@
         
         
         
-        <a href="#photos"><img src = "../images/member_6437280_3.jpg" class='profile' title="This photo is of me, taken by my brother, in the Ninh Binh province in Vietnam"></a>
+        <a href="#photos"><img src = "../images/member_6437280_3.jpg" alt='Photo of Me' class='profile' title="This photo is of me, taken by my brother, in the Ninh Binh province in Vietnam"></a>
         
         <div class="grey">
             <?php 
@@ -171,13 +169,13 @@
             Here are some photos that I have taken.
         </p>
         
-        <img src = "../images/member_6437280_1.jpg" class='pics' title="This is a photo of a cylcist, cyling round the roads at Centennial Park in Sydney Australia.">
-        <img src = "../images/member_6437280_2.jpg" class='pics' title="This is a photo of back of my friends house in the early hours of a new year.">
-        <img src = "../images/member_6437280_4.jpg" class='pics' title="This is a panoramic photo of the Sólheimajökull glacier in Iceland.">
-        <img src = "../images/member_6437280_5.jpg" class='pics' title="This is a photo of the cliffs by the village of Vík í Mýrdal in Iceland."> 
-        <img src = "../images/member_6437280_6.jpg" class='pics' title="This is a photo of my brother taken at the Summer Palace in Bejing, China.">
-        <img src = "../images/member_6437280_7.jpg" class='pics' title="This is a photo taken at the top of the Cugnai Chairlift in Val-d'Isere, France.">
-        
+        <img src = "../images/member_6437280_1.jpg" alt='Photo of a cylcist' class='pics' title="This is a photo of a cylcist, cyling round the roads at Centennial Park in Sydney Australia.">
+        <img src = "../images/member_6437280_2.jpg" alt='Photo of a house' class='pics' title="This is a photo of back of my friends house in the early hours of a new year.">
+        <img src = "../images/member_6437280_4.jpg" alt='Photo of a glacier' class='pics' title="This is a panoramic photo of the Sólheimajökull glacier in Iceland.">
+        <img src = "../images/member_6437280_5.jpg" alt='Photo of cliffs' class='pics' title="This is a photo of the cliffs by the village of Vík í Mýrdal in Iceland."> 
+        <img src = "../images/member_6437280_6.jpg" alt='Photo of my bro' class='pics' title="This is a photo of my brother taken at the Summer Palace in Bejing, China.">
+        <img src = "../images/member_6437280_7.jpg" alt='Photo of mountains' class='pics' title="This is a photo taken at the top of the Cugnai Chairlift in Val-d'Isere, France.">
+    
+        <?php include('../common/footer.php') ?>
     </body>
-    <?php include('../common/footer.php') ?>
 </html>
