@@ -125,7 +125,7 @@
                             </li>                            
                         </ul>
                     </section>
-                    <div style="height:unset; position:fixed;bottom:0;"><?php include('../common/footer.php') ?></div>                 
+                    <div style="height:unset;position:absolute;bottom:0;"><?php include('../common/footer.php') ?></div>                 
                 </div>
             </div>
         </div>
