@@ -55,7 +55,7 @@
     <body>
         <?php include('../common/header.php') ?>        
         <div>
-            <h1 style="background-color:#B22222;text-align:center; position:relative;text-shadow: 2px 2px;">Robert Bacon's Profile</h1>
+            <h1 style="background-color:#B22222;text-align:center; position:relative;text-shadow: 2px 2px 5px black;">Robert Bacon's Profile</h1>
             <h4 style="background-color:#ff0000;text-align:center; position:relative;"><?php 
             function displayTimeDate() {
                 $timeDate = date("d/m/Y h:i:sa");
