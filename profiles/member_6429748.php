@@ -30,16 +30,21 @@
 			<h2 class = headers>Past Progamming Experience</h2>
 				<p>In my previous school, I was taught python, which has surprisingly similar syntax to Java in some respects. I also had <span style = "font-style:italic; color:blue">some</span> HTML and CSS experience, but it wasn't taught very well and I sucked at it anyway. So while it probably gave me a bit of an advantage, I've still had to put in a lot of work to correct previous misconceptions and keep up with the teaching pace. And of course, it didn't help with PHP or XML.</p>
 				
-				<?php $hobbies = array("Skiing", "Video Games", "Anime (Mecha, mostly)"); ?>
+				<?php $hobbies = array("Hobby1" => "Skiing", "Hobby2" => "Video Games", "Hobby3" => "Anime (Mecha, mostly)"); ?>
 			
 			<h4>Hobbies</h4>
-			<ul> 
-					<?php
-					foreach ($hobbies as $hobbies): ?> 
-					<li> <?php echo $hobbies; ?></li>
-					<?php endforeach; ?>
-					
+			<ul> 					 
+					<li> <?php echo $hobbies["Hobby1"]; ?></li>
+					<li> <?php echo $hobbies["Hobby2"]; ?></li>
+					<li> <?php echo $hobbies["Hobby3"]; ?></li>
 			</ul>
+			
+			<p>And in a list...</p>
+			<br>
+			<?php foreach($hobbies as $hobbies) : ?>
+			<p><?php echo $hobbies; ?> </p>
+			<?php endforeach;
+            unset($hobbies);?>
 				
 			
 				<h4>Schools and opinions</h4>
