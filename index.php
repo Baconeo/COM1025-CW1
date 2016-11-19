@@ -169,12 +169,12 @@
                             $comment->addChild('name', $_POST["name"]);
                             $comment->addChild('content', $_POST["content"]);
                             
-                            $domXML = new DOMDocument('1.0');
-                            $domXML->preserveWhiteSpace = false;
-                            $domXML->formatOutput = true;
-                            $domXML->loadXML($xml->asXML());
+                            $xmlFormatted = new DOMDocument('1.0');
+                            $xmlFormatted->preserveWhiteSpace = false;
+                            $xmlFormatted->formatOutput = true;
+                            $xmlFormatted->loadXML($xml->asXML());
                             
-                            $domXML->save($xmlLocation);
+                            $xmlFormatted->save($xmlLocation);
                         }
                     }
                     ?>
