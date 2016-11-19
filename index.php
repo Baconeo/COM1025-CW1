@@ -208,7 +208,7 @@
                     <div style="position:relative;" id="contactForm" class="contactForm">
                         <form action="index.php" id="commentForm" method="POST">
                             <label>Your Name:</label><br>
-                            <input name="name" type="name"><br>
+                            <input name="name" type="text"><br>
                             <label>Comment:</label><br>
                             <textarea name="content" form="commentForm"></textarea><br> <br>   
                             <button onClick ="<?php storeComment(); ?>">Submit Comment</button>
