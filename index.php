@@ -50,18 +50,6 @@
                     float: right;
                 }
 	</style>        
-        <script type="text/javascript">
-            $(function() {
-                $("#mailtoform").submit(function(e) {
-                    $("#contactForm").hide();
-                    $("#contactFormSubmitted").show();
-                });
-            });
-            
-            function thankAlert(){
-            alert("Thank You");
-            }
-        </script>
     </head>
     <body>
         <?php include('./common/header.php') ?>        
