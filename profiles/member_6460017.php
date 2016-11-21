@@ -195,6 +195,25 @@ h2{
 	text-color:white;
 	color: white;
     text-shadow: 1px 1px 2px black, 0 0 25px grey, 0 0 5px darkblue;
+	
+	<!--This Code is css advanced-->
+	
+    -webkit-animation: move 3s; 
+    -webkit-animation-fill-mode: right; 
+    animation: move 3s;
+    animation-fill-mode: right;
+	}
+
+
+@-webkit-keyframes move {
+    from {left: 1000px;}
+    to {left: 100px;}
+}
+
+@keyframes move {
+    from {left: 1000px;}
+    to {left: 100px;}
+}
 
 	}
 p{
@@ -361,7 +380,6 @@ table,td,th{
 				<button onClick ="thankAlert()" class="button" value="Send">Submit </button>
 			</form>
 		</div>
-			<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 	</div>
 
 <!--This is my javascript code and it has got function as well-->
