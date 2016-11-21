@@ -2,22 +2,22 @@
 <html lang="en">
     <head>
         <title>Group 15</title>
-        <meta http-equiv="Content-type" content="text/html;charset=utf-8" />
+        <meta charset="UTF-8">
             <link type="text/css" rel="stylesheet" href="css/group.css">
             <script type="text/javascript" src="../jQuery/jquery-3.1.1.min.js"></script>
             <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'> 
                 
             <style type = "text/css">
-		ul{
-			margin: auto;
-			text-align: center;
-			padding: 100px
-			}
+		ul {
+                    margin: auto;
+                    text-align: center;
+                    padding: 100px
+		}
 
 		li {
-			display: inline-block;
-			width: 150px;
-			position: relative;
+                    display: inline-block;
+                    width: 150px;
+                    position: relative;
 		}
                 table {
                     border-collapse:collapse;
@@ -35,20 +35,21 @@
                 }
                 .half2{
                     top:100%;
-                }                
+                }         
+                #comments {
+                    color: black;
+                    border: 3px solid #ccc;
+                    border-radius: 4px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    width: 500px;
+                    height: 300px;
+                    display: block;
+                    margin : 0 auto;
+                    text-align: left;
+                    float: right;
+                }
 	</style>        
-        <script type="text/javascript">
-            $(function() {
-                $("#mailtoform").submit(function(e) {
-                    $("#contactForm").hide();
-                    $("#contactFormSubmitted").show();
-                });
-            });
-            
-            function thankAlert(){
-            alert("Thank You");
-            }
-        </script>
     </head>
     <body>
         <?php include('./common/header.php') ?>        
@@ -57,12 +58,16 @@
                 <header>
                     <h1 style="text-align:center">Group 15's Page!</h1>
                     <h2>Welcome To Our Group Page</h2>
-                                    <h3>Page Navigation:</h3>
-                                    <h5><a href="#table" class="topLink">-Member Information Table</a></h5>
-                                    <h3>Introduction</h3>
+                    <audio controls>
+                        <source src="audio/group15.wav" type="audio/wav">
+                    </audio>   
+                    <h3>Page Navigation:</h3>
+                    <h5><a href="#table" class="topLink">-Member Information Table</a></h5>
+                    <h3>Introduction</h3>
                     <p>This is group 15's main page! To access any of our members individual pages please click on their image below. This site will contain information about our members and their hobbie and interests. Their work email is also listed on this page should you wish to contact them. Enjoy!</p>
                 </header>
                 <h3 title="Click the image of the member to access their page">Our Members:</h3>
+
                 <ul>
                     <li>
                         <a href="profiles/member_6426813.php">
@@ -90,13 +95,13 @@
                     </li>
                     <li> 
                         <a href="profiles/member_6437280.php">
-                            <img alt="An image of Robbie" src = "images/Placeholder_person.jpg" class="pics">
+                            <img alt="An image of Robbie" src = "images/member_6437280.jpg" class="pics">
                             <div class="textoverlay"><p class="names" title="Robie Murray" >Robbie Murray</p></div>
                         </a>
                     </li>
                     <li> 
                         <a href="profiles/member_6429748.php">
-                            <img alt="An image of Lukas" src = "images/Placeholder_person.jpg" class="pics">
+                            <img alt="An image of Lukas" src = "images/member_6429748.jpg" class="pics">
                             <div class="textoverlay"><p class="names" title="Lukas Rygh" >Lukas Rygh</p></div>
                         </a>
                     </li>
@@ -116,10 +121,10 @@
                         ?>
                         <caption>Members of Group 15 Details</caption>
                         <tr>
-                                <th class="white">Name</th>
-                                <th class="white">Email</th>
-                                <th class="white">URN</th>
-                                <th class="white">Course</th>
+                                <th id="white">Name</th>
+                                <th id="white">Email</th>
+                                <th id="white">URN</th>
+                                <th id="white">Course</th>
                         </tr>
                         <tr>
                                 <td><?php echo $xml->student[0]->name; ?></td>
@@ -157,16 +162,79 @@
                                 <td><?php echo $xml->student[5]->URN; ?></td>
                                 <td><?php echo $xml->student[5]->coursetitle; ?></td>
                         </tr>
+                        <tr>
+                            <td colspan="4"><p id="bestmember"></p></td>
+                        </tr>
                     </table>
+                    <script>
+                    var i = Math.floor(Math.random() * 6);
+                    var name = null;
+                    switch(i) {
+                        case 0:
+                            name = 'Callum';
+                            break;
+                        case 1:
+                            name = 'Sam';
+                            break;
+                        case 2:
+                            name = 'Robert';
+                            break;
+                        case 3:
+                            name = 'Thushanthy';
+                            break;
+                        case 4:
+                            name = 'Robbie';
+                            break;
+                        case 5:
+                            name = 'Lukas';
+                            break;
+                        default:
+                            name = 'Nobody';
+                    }
+                    document.getElementById("bestmember").innerHTML = name + ' is the best student.';
+                    </script>
+                    
+                    <?php 
+                    function storeComment() {
+                        if (isset($_POST["name"]) && isset($_POST["content"])) {
+                            $xmlLocation = "./data/comments.xml";
+                            $xml = new SimpleXMLElement($xmlLocation, null, true);
+
+                            $comment = $xml->addChild('comment');
+                            $comment->addChild('name', $_POST["name"]);
+                            $comment->addChild('content', $_POST["content"]);
+                            
+                            $xmlFormatted = new DOMDocument('1.0');
+                            $xmlFormatted->preserveWhiteSpace = false;
+                            $xmlFormatted->formatOutput = true;
+                            $xmlFormatted->loadXML($xml->asXML());
+                            
+                            $xmlFormatted->save($xmlLocation);
+                        }
+                    }
+                    ?>
+                    <div id="comments">
+                        <h3 style="text-align:center">Comments</h3>
+                        <?php                         
+                        $comments = simplexml_load_file("./data/comments.xml"); 
+                        if (isset($_POST["name"]) && isset($_POST["content"])) {
+                            $comment = $comments->addChild('comment');
+                            $comment->addChild('name', $_POST["name"]);
+                            $comment->addChild('content', $_POST["content"]);                     
+                        }
+
+                        foreach($comments as $comment) {
+                            echo "<p>$comment->name: $comment->content</p>";
+                        }
+                        ?>
+                    </div>
                     <div style="position:relative;" id="contactForm" class="contactForm">
-                        <form action="mailto:sr00584@surrey.ac.uk,rm00727@surrey.ac.uk,lr00341@surrey.ac.uk,cs00916@surrey.ac.uk,rb00573@surrey.ac.uk,tt00308@surrey.ac.uk" id="mailtoform" method="POST">
-                            <label>Your Email:</label><br />
-                            <input type="email"><br />
-                            <label>Subject:</label><br />
-                            <input type="text"><br />
-                            <label>Comment:</label><br />
-                            <textarea form="mailtoform"></textarea><br /> <br />   
-                            <button onClick ="thankAlert()">Submit Comment</button>
+                        <form action="index.php" id="commentForm" method="POST">
+                            <label>Your Name:</label><br>
+                            <input name="name" type="text"><br>
+                            <label>Comment:</label><br>
+                            <textarea name="content" form="commentForm"></textarea><br> <br>   
+                            <button onClick ="<?php storeComment(); ?>">Submit Comment</button>
                         </form>
                     </div>	
                     <div style="display:none" id="contactFormSubmitted" class="contactForm">

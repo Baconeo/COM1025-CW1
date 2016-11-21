@@ -1,4 +1,8 @@
-﻿<html>
+﻿<!DOCTYPE html>
+<?php $cookie_name = 'views';
+$cookie_value = '1';
+setcookie($cookie_name, $cookie_value, time() + (86400 * 30), '/'); // 86400 = 1 day ?>
+<html>
 <style>
 body{
 
@@ -12,7 +16,17 @@ h1{
 }
 
 
-header, footer{
+footer{
+	background-color: ;
+	margin:0;
+	padding:none;
+	padding: 1em;
+	color: white;
+	background-color: #333;
+	clear: left;
+	text-align: center;
+}
+.header{
 	background-color: ;
 	margin:0;
 	padding:none;
@@ -74,6 +88,7 @@ li a:hover {
 	position:fixed;
 	position:overflow;
 	top:0;
+	
 }
 h2{
 	text-color:white;
@@ -95,6 +110,9 @@ h2{
 	opacity:0.8;
 	filter: alpha(opacity=50);
 	position: relative;
+	<!--I have got rounded corner which is advanced css as well-->
+	
+	border-radius: 25px;
 	<!-- I got this source from w3school but I have completely changed the size and the movement
 	http://www.w3schools.com/cssreF/tryit.asp?filename=trycss3_animation-fill-mode-->
 	
@@ -126,7 +144,20 @@ h2{
     width: 500px;
     padding: 30px;
     background: transparent;
-	position:center;}
+    position: absolute;
+    top: 2400px;
+    right: 16px;
+    font-size: 18px;
+	left:800px;
+	}
+	
+.mypic{
+	position: absolute;
+    top: 1500px;
+	right: 100px;
+
+	
+}
 
 .field{
     border: 1px solid black;
@@ -160,22 +191,33 @@ h2{
 	transform: translateY(4px);
 }
 
-h3{
+h2{
 	text-color:white;
 	color: white;
     text-shadow: 1px 1px 2px black, 0 0 25px grey, 0 0 5px darkblue;
+
 	}
+p{
+		font-family:"Trebuchet MS", Helvetica, sans-serif;
+	}
+	
+table,td,th{
+	border:1px solid grey;
+}
+
+
 
 </style>
-<head>
+
 <title>Thushanthy Thillainathan's Page</title>
-</head>
+
 
 <body>
 
 <section>
 <div id ="home">
-	<header>
+		<div class="header">
+
 		<div class ="navbar">
 			<ul>
 				<li><a class="active" href="../index.php">Home</a></li>
@@ -183,28 +225,15 @@ h3{
 				<li><a class="active" href="#contact">Contact Me</a></li>
 			</ul>
 		</div>
-	<h1> Thushanthy Thillainathan</h1>
-	</header>
+	<h2> Thushanthy Thillainathan</h2>
+	</div>
 
 
 	<br/>
 	<br/>
-	<h2><marquee> Welcome To My Page</marquee></h2>
+	<h2>Welcome To My Page</h2>
 
-  <?xml version ="1.0" encoding ="UTF-8"?>
-
-            <!DOCTYPE note
-                [<!ELEMENT note (to, from,body)>
-            <!ELEMENT to (#PCDATA)>
-            <!ELEMENT from (#PCDATA)>
-            <!ELEMENT body (#PCDATA)>
-
-            ]>
-            <note>
-                <to> User</to>
-                <from> Thushanthy</from>
-                <body>Welcome To My Page</body>
-            </note>
+ 
 
 	<div class ="text">
 	<p>This page is about myself and my hobby. I have got about me page in order to let you know some information about me and also I have got contact me page to contact me as well.</p>
@@ -218,6 +247,8 @@ h3{
 	echo "<br>";
 	}
 	?>
+	
+
 
 	</div>
 	<br/>
@@ -232,23 +263,26 @@ h3{
 	<!--About me page-->
 
 <div id ="aboutme" >
-	<header>
+	<div class="header">
 
-	<h1> About Me</h1>
-	</header>
+	<h2> About Me</h2>
+	</div>
 
 
 	<br/>
 	<br/>
 	<!-- this video i have made and the pictures are mine as well-->
-	<iframe  width="1200" height="400" 
-	src="https://www.youtube.com/watch?v=AHz97O0_35A">
-	</iframe>
+	<div>
+	<iframe width="1300" height="350" src="https://www.youtube.com/embed/AHz97O0_35A" ></iframe>
+	</div>
+	<div class="mypic">
+		<img src="../images/member_6460017_mypic.jpg" width="400" height="500" alt="mypic">
+	</div>
 	<div class ="text">
-	<p><span style= "text-color:black; font-size:25px;" > <b>Hello!!! I am Thushanthy Thillainathan. <br></br>I am studying computing and information technology. I am from Sri Lanka and I have been living in here for four years. I was in Wembley high technology and studied my GSCE in there. After I continued my education in harrow college and did my further education in there.Finally I am here now.</b><br></br></span></p>
+	<p><span style= "text-color:black; font-size:25px;" > <b>Hello!!! I am Thushanthy Thillainathan. <br/>I am studying computing and information technology. I am from Sri Lanka and I have been living in here for four years. I was in Wembley high technology and studied my GSCE in there. After I continued my education in harrow college and did my further education in there.Finally I am here now.</b><br/></span></p>
 	<p><span style= "text-color:black; font-size:25px;" ><b>I love Photography alot. I love taking pictures of intersting things, or new things and the landscape as well. Even the random pictures that you take make you to remember something. <i>I don't shoot what it looks like I shoot what it feels like</i> </b></span> </p>
-	<p> <span style= "text-color:black; font-size:25px;" ><b>In this table I have got some of the qualifications I got.</b></p></span>
-		<p>
+	<p> <span style= "text-color:black; font-size:25px;" ><b>In this table I have got some of the qualifications I got.</b></span></p>
+		
 		<table>
 			<tr>
 			<th>Subject</th>
@@ -267,7 +301,7 @@ h3{
 			<td> D*D*D*</td>
 			</tr>
 		</table>
-		</p>
+		
 	</div>
 	<br/>
 
@@ -282,28 +316,52 @@ h3{
 <!--contact me page-->
 
 <div id ="contact">
-	<header>
+	<div class="header">
 	<h2> Contact me</h2>
-	</header>
+	</div>
 	<div id="contactme">
 		<div class ="text">
 
-			<p> <span style= "text-color:black; font-size:25px;" ><b> Want To Know More About Me??? <br> Contact Me </b> <p></span>
-			<img src =""
+			<p> <span style= "text-color:black; font-size:25px;" ></span><b> Want To Know More About Me??? <br> Contact Me </b> </p>
+				
+					<?xml version="1.0" standalone="no" ?>
+						<!DOCTYPE note SYSTEM "member_6460017.dtd">
+						<note>
+							<to>user</to>
+							<from>Thushanthy</from>
+							<heading>Reminder</heading>
+							<message>Don't forget to subscribe me</message>
+						</note>
+					
+					
+					
+					<br/><br/><br/>
 		</div>
-			<br></br>
+			<table>
+                <tr>
+                  <td><a href="https://www.facebook.com/" title="facebook page"></a><img src="../images/fb.png" width="66" height="69" alt="fb"></td>
+                  <td><a href="https://http://instagram.com/" title="instragm page"></a><img src="../images/instagram.png" width="58" height="58" alt="instragrm"></td>
+                  <td><a href="https://accounts.google.com/ServiceLogin?sacu=1&continue=https%3A%2F%2Fplus.google.com%2F%3Ffd%3D1%26gpsrc%3Dgplp0&service=oz" title="google+ page"></a><img src="../images/google.jpg" width="62" height="61" alt="google+"></td>
+                  <td><a href="https://twitter.com/?lang=en-gb" title="twitter page"></a><img src="../images/Twitter.png" width="62" height="63" alt="t"></td>
+                  <td><a href="https://www.tumblr.com/" title="tumblr page"></a><img src="../images/tumblr.png" width="65" height="64" alt="tumblr"></td>
+                </tr>
+							<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+			</table>
+		</div>
+			<br/>
 
 		<div class="form">
 
 		<h2>Contact Us</h2>
-			<form>
+			<form class="contact-form">
 				<input type="text" class="field" placeholder="  Your Name" />
 				<input type="text" class="field" placeholder="Email Address" />
 				<textarea class="field" placeholder="Type your Message"></textarea>
 				<button onClick ="thankAlert()" class="button" value="Send">Submit </button>
 			</form>
 		</div>
-
+			<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 	</div>
 
 <!--This is my javascript code and it has got function as well-->
@@ -319,15 +377,28 @@ h3{
             alert("Thank You");
             }
         </script>
-</div>
+		
+		<!-- This code is bit advanced as well and this clear all the fields that the use click on the submit button-->
+		<script>
+		function submit() {
+            document.contact-form.submit();
+            document.contact-form.reset();
+		</script>
+		
 
-<footer>
-© Thushanthy Thillainathan 
-</footer>
-</div>
+		<?php
+		if(!isset($_COOKIE[$cookie_name])) {
+		print "cookies"." ".$cookie_name . "=".$cookie_value;
+		} else {
+		print "cookies"." ".$cookie_name ."=". $cookie_value;}	
+		?>
+		
 
 
 
+	<footer>
+	© Thushanthy Thillainathan 
+	</footer>
 
 </body>
 </html>

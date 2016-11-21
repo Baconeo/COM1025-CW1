@@ -11,12 +11,9 @@
                 width: 99%;
                 height: 100%;
             }
-            div #frontpage {
-                top: 100%
-            }
             div  #hobbies {
                 position: absolute;
-                top: 200%;
+                top: 100%;
             }
             table {
                 color: black;
@@ -29,7 +26,7 @@
                 text-align: center;
             }
         </style>
-        <script>
+        <script type="text/javascript">
             $(function() {
                 // Run when an 'a' tag is clicked 
                 $('a').click(function(){
@@ -57,14 +54,14 @@
     
     <body>
         <?php include('../common/header.php') ?>        
-        <div id='frontpage'>
-            <h1 style="background-color:#B22222;text-align:center; position:relative;">Robert Bacon's Profile</h1>
+        <div>
+            <h1 style="background-color:#B22222;text-align:center; position:relative;text-shadow: 2px 2px 5px black;">Robert Bacon's Profile</h1>
             <h4 style="background-color:#ff0000;text-align:center; position:relative;"><?php 
             function displayTimeDate() {
                 $timeDate = date("d/m/Y h:i:sa");
                 echo "$timeDate";
             }
-            
+
             displayTimeDate();
             ?></h4>
             <table style='margin: 0 auto;'>
@@ -76,8 +73,8 @@
                 </tr>
             </table>
             <br>
-            <img style='margin: 0 auto;display:block;width:250px;height:250px;' alt="Robert Bacon's face" src = "../images/member_6416585.jpg">
-
+            <img style='margin: 0 auto;display:block;width:250px;height:250px;border-radius: 25px;' alt="Robert Bacon's face" src = "../images/member_6416585.jpg">       
+            
             <div id='hobbies'>
                 <div>
                     <h2>Hobbies</h2>
@@ -91,10 +88,10 @@
                         </tr>
                     </table>
                     <section id="airsoft">
-                        <h3><span style='color:grey; '>Airsoft</span></h3>
+                        <h3><span style='color:grey;'>Airsoft</span></h3>
                         <p>Airsoft is a game similar to paintball. Instead of shooting small balls of paint that explode on impact, airsoft uses small plastic 6mm bbs</p>
                         <!-- Source for image - https://www.quora.com/What-are-the-differences-between-paintball-and-airsoft -->
-                        <img alt="Paintball vs BB" src='../images/member_6416565_1.jpg'>
+                        <img alt="Paintball vs BB" src='../images/member_6416585_1.jpg'>
                         <h4>My kit:</h4>
                         <ul>
                             <?php
@@ -128,8 +125,8 @@
                             </li>                            
                         </ul>
                     </section>
+                    <div style="height:unset;position:absolute;bottom:0;"><?php include('../common/footer.php') ?></div>                 
                 </div>
-                <div style="height:5%"><?php include('../common/footer.php') ?></div>                       
             </div>
         </div>
     </body>

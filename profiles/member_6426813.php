@@ -87,7 +87,7 @@
 	<div id="xml">
 		<h3 class = "headings">Background information</h3>
 		<?php
-			$xml = simplexml_load_file("../data/member_6426813.xml");
+			$xml = simplexml_load_file("C:/xampp/htdocs/com1025_cw1/data/member_6426813.xml");
 			echo "name: ", $xml->name, "<br />";
 			echo "age: ", $xml->age, "<br />";
 			echo "birthday: ", $xml->birthday, "<br />";
