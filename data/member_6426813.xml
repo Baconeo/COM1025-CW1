@@ -13,7 +13,7 @@
 <!ELEMENT place (location,time_lived)>
 <!ELEMENT location (#PCDATA)>
 <!ELEMENT time_lived (#PCDATA)>
-}>
+]>
 <info>
 	<name>Callum Seymour</name>
 	<age>18</age>

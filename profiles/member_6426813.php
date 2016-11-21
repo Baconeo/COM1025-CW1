@@ -49,7 +49,10 @@
 			background-color: #00ff99;
 		}
 		span{
-			font-weight:bold;}	
+			font-weight:bold;}
+                nav > a{
+                    padding: 10px;
+                }
 		</style>
     </head>
     <body>
@@ -77,13 +80,14 @@
 		<p>This is my personal page which briefly details my life, including information about my <span>education</span>, as well as my <span>key events in my life</span> and <span>hobbbies and interests</span>.</p>
 	
 	<h2 class="headings">Contents</h2>
-		<ul>
-			<li><a href="#xml">Background information</a></li>
-			<li><a href="#education">Education</a></li>
-			<li><a href="#dates">Key dates</a></li>
-			<li><a href="#hobbies">Hobbies/interests</a></li>
-		</ul>
+		<nav>
+			<a href="#xml">Background information</a>
+			<a href="#education">Education</a>
+			<a href="#dates">Key dates</a>
+			<a href="#hobbies">Hobbies/interests</a>
+                </nav>
 	
+        <section>
 	<div id="xml">
 		<h3 class = "headings">Background information</h3>
 		<?php
@@ -105,6 +109,8 @@
 			echo "</div>";
 		?>
 	</div>	
+        </section>
+        <section>
 	<div id="education">
 	<h3 class = "headings">Education</h3>
 		<table id="exams">
@@ -174,7 +180,9 @@
 			</tr>
 		</table>
 	</div>
+        </section>    
 	
+        <section>
 	<div id="dates">
 		<h3 class = "headings">Key dates</h3>
 		<?php
@@ -191,7 +199,9 @@
 			}			   
 		?>
 	</div>
+        </section>    
 
+        <section>
 	<div id="hobbies">
 		<h3 class = "headings">Hobbies / interests</h3>
 		<ul>
@@ -204,6 +214,7 @@
 			<li>Reading</li>
 		</ul>
 	</div>
+        </section>    
 	<?php include('../common/footer.php') ?>
     </body>
 </html>
