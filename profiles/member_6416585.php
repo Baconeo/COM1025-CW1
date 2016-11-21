@@ -3,7 +3,7 @@
     <head>
         <meta http-equiv="Content-type" content="text/html;charset=utf-8" />
         <link type="text/css" rel="stylesheet" href="../css/group.css"> 
-        <script type="text/javascript" src="../jQuery/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="../external/jQuery/jquery-3.1.1.min.js"></script>
         
         <title>Robert Bacon's Profile</title>
         <style type='text/css'>

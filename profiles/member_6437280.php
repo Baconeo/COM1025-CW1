@@ -4,7 +4,7 @@
         <title> Robbie's Awesome Page duh </title>
         <meta charset="UTF-8">
         <link type="text/css" rel="stylesheet" href="../css/group.css">
-        <script type="text/javascript" src="../jQuery/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="../external/jQuery/jquery-3.1.1.min.js"></script>
         <style type="text/css">
             h1.main{
                 text-align: center;

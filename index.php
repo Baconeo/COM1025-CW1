@@ -4,7 +4,7 @@
         <title>Group 15</title>
         <meta charset="UTF-8">
             <link type="text/css" rel="stylesheet" href="css/group.css">
-            <script type="text/javascript" src="../jQuery/jquery-3.1.1.min.js"></script>
+            <script type="text/javascript" src="../external/jQuery/jquery-3.1.1.min.js"></script>
             <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'> 
                 
             <style type = "text/css">

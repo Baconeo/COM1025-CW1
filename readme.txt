@@ -153,8 +153,10 @@ member_6407279.mp3
 	
 member_6437280.mp3
 	Member 6437280 (Robbie Murray) audio file to be used with the audio tag on his page
+
+-external folder
 	
--jQuery folder
+	-jQuery folder
 	
-jquery-3.1.1.min
-	jQuery to allow it to be used on the site.
+	jquery-3.1.1.min
+		jQuery to allow it to be used on the site.
