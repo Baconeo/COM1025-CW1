@@ -106,7 +106,7 @@
 			foreach($xml->places_lived->place as $place){
 					echo $place->location," - ",$place->time_lived, "<br />";
 			}
-			echo "</div>";
+			echo $person->person_name;
 		?>
 	</div>	
         </section>
