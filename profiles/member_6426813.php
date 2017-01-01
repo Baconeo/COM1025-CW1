@@ -98,7 +98,7 @@
 			echo "Immediate family: <br />";
 			echo "<div class='family'>";
 			foreach($xml->family->person as $person){
-					echo $person->name," - ",$person->relation, "<br />";
+					echo $person->person_name," - ",$person->relation, "<br />";
 			}
 			echo "</div>";
 			echo "Where I have lived: <br />";

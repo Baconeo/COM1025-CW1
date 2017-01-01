@@ -343,14 +343,10 @@ table,td,th{
 
 			<p> <span style= "text-color:black; font-size:25px;" ></span><b> Want To Know More About Me??? <br> Contact Me </b> </p>
 				
-					<?xml version="1.0" standalone="no" ?>
-						<!DOCTYPE note SYSTEM "member_6460017.dtd">
-						<note>
-							<to>user</to>
-							<from>Thushanthy</from>
-							<heading>Reminder</heading>
-							<message>Don't forget to subscribe me</message>
-						</note>
+					<?php
+					$xml ="../member_6460017.xml"
+					?>
+						
 					
 					
 					
@@ -358,11 +354,11 @@ table,td,th{
 		</div>
 			<table>
                 <tr>
-                  <td><a href="https://www.facebook.com/" title="facebook page"></a><img src="../images/fb.png" width="66" height="69" alt="fb"></td>
-                  <td><a href="https://http://instagram.com/" title="instragm page"></a><img src="../images/instagram.png" width="58" height="58" alt="instragrm"></td>
+                  <td><a href="https://www.facebook.com/" title="facebook page"><img src="../images/fb.png" width="66" height="69" alt="fb"></td>
+                  <td><a href="https://http://instagram.com/" title="instragm page"><img src="../images/instagram.png" width="58" height="58" alt="instragrm"></td>
                   <td><a href="https://accounts.google.com/ServiceLogin?sacu=1&continue=https%3A%2F%2Fplus.google.com%2F%3Ffd%3D1%26gpsrc%3Dgplp0&service=oz" title="google+ page"></a><img src="../images/google.jpg" width="62" height="61" alt="google+"></td>
-                  <td><a href="https://twitter.com/?lang=en-gb" title="twitter page"></a><img src="../images/Twitter.png" width="62" height="63" alt="t"></td>
-                  <td><a href="https://www.tumblr.com/" title="tumblr page"></a><img src="../images/tumblr.png" width="65" height="64" alt="tumblr"></td>
+                  <td><a href="https://twitter.com/?lang=en-gb" title="twitter page"><img src="../images/Twitter.png" width="62" height="63" alt="t"></td>
+                  <td><a href="https://www.tumblr.com/" title="tumblr page"><img src="../images/tumblr.png" width="65" height="64" alt="tumblr"></td>
                 </tr>
 							<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 

@@ -5,3 +5,9 @@
 <!ELEMENT from (#PCDATA)>
 <!ELEMENT heading (#PCDATA)>
 <!ELEMENT message (#PCDATA)>
+						<note>
+							<to>user</to>
+							<from>Thushanthy</from>
+							<heading>Reminder</heading>
+							<message>Don't forget to subscribe me</message>
+						</note>
